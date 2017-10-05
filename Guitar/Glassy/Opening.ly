@@ -350,12 +350,18 @@
 	\tuplet 3/2 {fis d fis}
 	\tuplet 3/2 {d fis d}
 	\tuplet 3/2 {fis d fis}
-	\tuplet 3/2 {d fis d}
+  \set tieWaitForNote = ##t
+	\tuplet 3/2 {d fis~ d~}
+	<fis d>1
 }\\{ 
-	a, a' d, a' d, a' d, a'
-	d, a' d, a' d, a' d, a'
+  \set tieWaitForNote = ##t
+
+	a,,8 a' d, a' d, a' d, a'
+	d, a' d, a' d, a' d,~ a'~
+
+	<d, a'>1
+
 }>>
-<a, d a' d fis>1
 
 }
 }
