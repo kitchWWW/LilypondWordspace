@@ -1,5 +1,5 @@
 \version "2.18.2"
-#(set-global-staff-size 17)
+#(set-global-staff-size 20)
 
 \paper{
   paper-width = 8.5\in
@@ -20,7 +20,7 @@ subtitle ="  "
 subsubtitle =  \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #3 
-         "For insturments with two ways to play one note" }
+         "For any instrument with two ways of playing one note" }
 tagline=""
 composer = \markup { 
          \override #'(font-name . "Avenir Light")
@@ -35,9 +35,13 @@ arranger = "   "
 \layout{}
 \new Voice \with {
   \remove "Forbid_line_break_engraver"
-} \relative c'{
+}
+
+\transpose c d {
+\relative c{
 	 \override Staff.StaffSymbol.line-count = #2
 	\override Score.BarNumber.break-visibility = ##(#f #f #f)
+	\clef percussion
 	\bar ".|:"
 	\time 2/4
 	r2
@@ -146,8 +150,6 @@ arranger = "   "
 \break
 
 
-
-
-
+}
 }
 }

@@ -152,7 +152,7 @@
 
 
 
-#(set-global-staff-size 24)
+#(set-global-staff-size 20)
 
 \paper{
   paper-width = 8.5\in
@@ -173,8 +173,20 @@ subtitle ="  "
 subsubtitle =  \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #3 
-         "For insturments with two ways to play one note" }
-tagline=""
+         "For any instrument with two ways of playing one note" }
+tagline=\markup{
+\column{
+\line{"  "}
+\line{"  "}
+\line{"  "}
+\line{"  "}
+\line{"Notes:"}
+\line{"  "}
+\line{"Arrows represent a gradual transition from the current material to the next."}
+\line{"Transitions should take between sixteen and thirty repetitions."}
+\line{"As soon as it is felt the new material has been arrived at, continue."}
+}
+}
 composer = \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #1 
@@ -208,7 +220,7 @@ arranger = "   "
       \concat {
         \raise #1
         \scale #'(1.2 . 0.8)
-        \arrow #"long" ##f #X #RIGHT #18 #0.3       }
+        \arrow #"long" ##f #X #RIGHT #25 #0.3       }
     } 
 	d b b d b b [d b]
 	\revert Score.BarLine.stencil
@@ -231,7 +243,7 @@ arranger = "   "
       \concat {
         \raise #1
         \scale #'(1.2 . 0.8)
-        \arrow #"long" ##f #X #RIGHT #18 #0.3       }
+        \arrow #"long" ##f #X #RIGHT #25 #0.3       }
     } 
 	d b b d b [b] d [b]
 	\revert Score.BarLine.stencil
@@ -254,7 +266,7 @@ arranger = "   "
       \concat {
         \raise #1
         \scale #'(1.2 . 0.8)
-        \arrow #"long" ##f #X #RIGHT #18 #0.3       }
+        \arrow #"long" ##f #X #RIGHT #25 #0.3       }
     } 
 	b d b b d b [b d]
 	\revert Score.BarLine.stencil

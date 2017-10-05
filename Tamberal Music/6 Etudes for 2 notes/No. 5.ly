@@ -1,5 +1,5 @@
 \version "2.18.2"
-#(set-global-staff-size 24)
+#(set-global-staff-size 20)
 
 \paper{
   paper-width = 8.5\in
@@ -20,8 +20,21 @@ subtitle ="  "
 subsubtitle =  \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #3 
-         "For insturments with two ways to play one note" }
-tagline=""
+         "For any instrument with two ways of playing one note" }
+tagline=\markup{
+\column{
+\line{"  "}
+\line{"  "}
+\line{"  "}
+\line{"  "}
+\line{"Notes:"}
+\line{"  "}
+\line{"Piece should not have a prevailing sense of meter."}
+\line{"Time indicated is start time, duration left to performer discretion."}
+\line{"Whole notes should be allowed to decay naturally."}
+\line{"Whole rests are unmetered."}
+}
+}
 composer = \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #1 
@@ -29,14 +42,22 @@ composer = \markup {
 arranger = "   "
 }
 
+\book{
 
 \score{
 \midi {}
 \layout{}
+\new Staff <<
+\new Voice {
+}
 \new Voice \with {
   \remove "Forbid_line_break_engraver"
 } \relative c'{
-	 \override Staff.StaffSymbol.line-count = #2
+
+\overrideProperty NonMusicalPaperColumn.line-break-system-details
+  #'((X-offset . 90))
+
+	\override Staff.StaffSymbol.line-count = #2
 	\override Score.BarNumber.break-visibility = ##(#f #f #f)
 	\clef percussion
 	r1\fermata
@@ -51,6 +72,7 @@ arranger = "   "
 	\time 4/4
 	r1\fermata
 	\time 3/16
+\break
 	b16^"1:10" [d8]
 	b16 [d8]
 	~
@@ -61,6 +83,7 @@ arranger = "   "
 	\time 3/4
 	b4-.^"1:40" b4-. b4-. 
 	\time 4/4
+\break
 	r1\fermata
 	d1^"2:05"
 	r1\fermata
@@ -69,6 +92,7 @@ arranger = "   "
 	\time 4/4
 	r1\fermata
 	\time 3/16
+\break
 	d16^"3:02" [b8]
 	\time 4/4
 	r1\fermata
@@ -79,8 +103,11 @@ arranger = "   "
 	b1^"3:29"
 	r1 \fermata
 \bar "|." \mark \markup{ \normalsize{"3:41"}}
-		
-	
-	
-}
-}
+	}%relative
+>>
+}%score
+
+}%book
+
+
+

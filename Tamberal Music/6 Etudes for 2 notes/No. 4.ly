@@ -1,5 +1,5 @@
 \version "2.18.2"
-#(set-global-staff-size 24)
+#(set-global-staff-size 20)
 
 \paper{
   paper-width = 8.5\in
@@ -20,7 +20,7 @@ subtitle ="  "
 subsubtitle =  \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #3 
-         "For insturments with two ways to play one note" }
+         "For any instrument with two ways of playing one note" }
 tagline=""
 composer = \markup { 
          \override #'(font-name . "Avenir Light")
@@ -43,11 +43,11 @@ arranger = "   "
 	\acciaccatura b16 (d4) b b b
 	b b b b
 	d d d b b b b b
-\bar ":|.|:"
+\bar ":|.|:" \break
 	\acciaccatura b16 (d4) b b b->
 	b b b-> b b d d d
 	b b b b
-\bar ":|.|:"
+\bar ":|.|:" \break
 	<<{
 	d4 d d d
 	}\\{
@@ -59,7 +59,7 @@ arranger = "   "
 	\times 2/3 {<b d>4 d d}
 	b4 d
 	b b b b
-\bar ":|.|:"
+\bar ":|.|:" \break
 	\times 2/3 {b4 b b}
 	\times 2/3 {b4 b b}
 	d4 d d b
@@ -71,14 +71,14 @@ arranger = "   "
 	}>>
 	b4 b2.
 	b4 b b b
-\bar ":|.|:"
+\bar ":|.|:" \break
 	b4 b \times 2/3 {b4 b b}
 	\times 2/3 {b4 b b} d8 d d d
 	b8 [b b] b [b b] b [b]
 	d4 d2. ~ d4 d d2
 	<b d>4 b b b
 	b b b b d d d b
-\bar ":|.|:"
+\bar ":|.|:" \break
 	<<{
 	d4 d d d
 	}\\{
@@ -95,7 +95,7 @@ arranger = "   "
 	b8 b b b
 	\times 2/3 {<b d>4 d d}
 	b8 b d4~ d1
-\bar ":|.|:"
+\bar ":|.|:" \break
 	b4 b b r
 	b b b r
 	b d d d

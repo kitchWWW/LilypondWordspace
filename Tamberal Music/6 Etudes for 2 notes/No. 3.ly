@@ -20,7 +20,7 @@ subtitle ="  "
 subsubtitle =  \markup { 
          \override #'(font-name . "Avenir Light")
 		\fontsize #3 
-         "For insturments with two ways to play one note" }
+         "For any instrument with two ways of playing one note" }
 tagline=""
 composer = \markup { 
          \override #'(font-name . "Avenir Light")
