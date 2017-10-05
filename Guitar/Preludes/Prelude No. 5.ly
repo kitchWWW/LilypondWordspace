@@ -1,6 +1,6 @@
 
 \header{
-	title = "Solo Piece"
+	title = "Prelude No. 5"
 	tagline = ""
 	composer = "Brian Ellis"
 	arranger = "  "

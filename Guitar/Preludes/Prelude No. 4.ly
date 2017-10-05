@@ -20,46 +20,74 @@
 \score {
 	\midi {}
 	\layout {}
-
-<<
 	\new Staff \relative c'' {
 	\time 2/4
 	\key d \major
-	cis,4 (d a' g) r2
-	cis,4 (d a' g) r2
-	cis,4 (d a' g) r2
-	cis,4 (d a'2 g4) r4
-	cis,4 (d a' g) r2
-	cis,4 (d a' g) a2 r
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
-	cis,4( d a' g)
+<<{
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a'2 g4) 
+	s4 s2
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a'2 g4) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a') 
+
+}\\{
+	S1 s1 s1 s1 
+	cis,4 (d a' g) 
+	s1 s1 s1 s1
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+	cis,4 (d a' g) 
+}>>
+\break
+<<{
+	cis, d a' g
+}\\{
+	g cis, d a'
+}>>
+s2
+cis,16 g'8. d16 cis8. a'16 d,8. g16 a8.
+s2
+cis,8 g'8 d8 cis8 a'8 d,8 g8 a8
+s2
+cis,8. g'16 d8. cis16 a'8. d,16 g8. a16
+s2
+<<{
+	cis,4 d a' g
+}\\{
+	a g cis, d
+}>>
+\break
+<<{
+	cis4 d a' g
+}\\{
+	a g cis, d
+}>>
+<<{
+	cis4 d a' g
+}\\{
+	a g cis, d
+}>>
+<<{
+	cis4 d a' g
+}\\{
+	a g cis, d
+}>>
+	a'4 g fis2 \bar "|."
+
+
+
 }
-\new Staff \relative c'' {
-	\time 2/4
-	\key d \major
-S2*19
-	r4 cis,4 (d a' g) r2
-	cis,4 (d a'~a g4) r4
-	cis,4 (d a' g) r4 r
-	cis,4 (d a' g) a4 ~a2
-	S2 S2 
-	cis,4 (d a' g) r
-	cis,4 (d a'2 g4) r4
-	cis,4 (d a' g) r2
-	cis,4 (d a' g) a2 r
-}
->>
+
 }
 
 
+ 
