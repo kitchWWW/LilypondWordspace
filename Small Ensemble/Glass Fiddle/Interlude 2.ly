@@ -1,14 +1,11 @@
 \version "2.18.2"
-	
-#(set-global-staff-size 20)
-	
+		
+
+\score{
 \header{
 piece ="Interlude 2"
-composer = "Brian Ellis"
 tagline =""
 }
-\score{
-
 \new StaffGroup <<
 %=========================================================================
 \new Staff \with {

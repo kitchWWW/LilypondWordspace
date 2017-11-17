@@ -1,14 +1,11 @@
 \version "2.18.2"
-	
-#(set-global-staff-size 20)
+
+\score{
 	
 \header{
 piece ="Interlude 3"
-composer = "Brian Ellis"
 tagline =""
 }
-\score{
-
 \new StaffGroup <<
 %=========================================================================
 \new Staff \with {
@@ -25,15 +22,19 @@ tagline =""
 	r1 r1
 	c''1
 	
-	^\markup{\column {"  " 
+	
+	
+	~c 
+
+^\markup{\column {"  " 
 	"Fade all notes in and out"
 	"Tremolo pulse is taken from Violin 1 and Cello"
 	"Enter at you leasure"
 	"For shift at m.7, follow Violin 2"
 	"  "
 	}}
-	
-	~c ~ c r
+
+	~ c r
 	r b ~ b2 b,2 ~ b1 r
 	\bar "||"
 	

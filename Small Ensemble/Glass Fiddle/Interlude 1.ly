@@ -1,14 +1,11 @@
 \version "2.18.2"
-	
-#(set-global-staff-size 20)
-	
+		
+
+\score{
 \header{
 piece ="Interlude 1"
-composer = "Brian Ellis"
 tagline =""
 }
-\score{
-
 \new StaffGroup <<
 %=========================================================================
 \new Staff \with {
@@ -124,7 +121,8 @@ tagline =""
 }
 >>
 \midi {}
-\layout{}
+  \layout {
+  }
 }
 
 
