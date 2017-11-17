@@ -51,7 +51,7 @@ tagline =""
 	\key e \major
 	e:32 e: e: e: e: e: 
 \bar "||"
-	e r r r r1
+	e2 e, r1 r r r1
 	}	
 }
 %=========================================================================
@@ -110,8 +110,10 @@ tagline =""
 	\relative c {
 	\key c \major
 	\clef "treble_8"
-	r1 r1 r1 <e e'>:32 <<{e'1:32}\\{e,2:32 e,:32}>> 
-	<e e''>1:32<e e''>1 <<{e''2 e,}\\{e,1}>>  <e e'>
+	r1 r1 r1 <e e'>:32_\markup{\italic{"nat."}} <<{e'1:32}\\{e,2:32 e,:32}>> 
+	<e e''>1:32
+	
+	<e e''>1^\markup{\italic{"bow"}} <<{e''2 e,}\\{e,1}>>  <e e'>
 	r1 r1
 
 	}	

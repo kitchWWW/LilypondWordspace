@@ -31,7 +31,7 @@ tagline =""
 	}}
 	
 	~aes ~ aes r
-	r g ~ g ~ g r
+	r g ~ g ~ g r^\markup{\italic{\teeny "attacca"}}
 	\bar "||"
 	
 	}	
@@ -45,7 +45,7 @@ tagline =""
 	\relative c'' {
 \compressFullBarRests
 	\key c \major
-	r1 r1 r1 c1 ~ c ~ c c:32 c: c: r r
+	r1 r1 r1 c1 ~ c ~ c c:32 c: c: r r^\markup{\italic{\teeny "attacca"}}
 	}	
 }
 %=========================================================================
@@ -57,7 +57,7 @@ tagline =""
 }{
 	
 	\relative c' {
-	aes'1 ~ aes~ aes~ aes~ aes~ aes \bar"||" g ~ g ~ g ~ g ~ g
+	aes'1 ~ aes~ aes~ aes~ aes~ aes \bar"||" g ~ g ~ g ~ g ~ g^\markup{\italic{\teeny "attacca"}}
 
 	}	
 }
@@ -74,7 +74,7 @@ tagline =""
 \compressFullBarRests
 	\clef "alto"
 	c:32 c: c: c: c: c: 
-	c: r r r r1
+	c: r r r r1^\markup{\italic{\teeny "attacca"}}
 
 	}	
 }
@@ -90,7 +90,7 @@ tagline =""
 	\relative c {
 	\clef "bass"
 	r1 r1 r1 r1 r1 <c, aes'>
-	<c g'>:32 <c g'>:32 r r r
+	<c g'>:32 <c g'>:32 r r r^\markup{\italic{\teeny "attacca"}}
 	}	
 }
 
@@ -103,8 +103,10 @@ tagline =""
 	\relative c {
 	\key c \major
 	\clef "treble_8"
-	r1 <c aes'> ~ <c aes'> ~ <c aes'> ~ <c aes'> ~ <c aes'>
-	<c g'>:32 <c g'>:32 <c g'>:32 <c g'>:32 r1
+	r1 <c aes'>^\markup{\italic{"bow"}}
+	 ~ <c aes'> ~ <c aes'> ~ <c aes'> ~ <c aes'>
+	<c g'>:32_\markup{\italic{"nat."}}
+	 <c g'>:32 <c g'>:32 <c g'>:32 r1^\markup{\italic{\teeny "attacca"}}
 	}	
 }%=========================================================================
 \new Staff \with {
@@ -115,7 +117,7 @@ tagline =""
 	\relative c {
 	\key c \major
 	\clef "treble_8"
-	r1 r1 r1 r1 <c aes'> <c aes'> <c g'>:32 <c g'>: <c g'>: r r
+	r1 r1 r1 r1 <c aes'> <c aes'> <c g'>:32 <c g'>: <c g'>: r r^\markup{\italic{\teeny "attacca"}}
 	}	
 }
 >>

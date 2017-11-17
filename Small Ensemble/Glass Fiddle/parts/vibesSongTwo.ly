@@ -3,8 +3,11 @@ vibesSongTwo = 	\relative c'' {
 
 	\key c \major
 	\clef "treble"
-\mark \default
+
 	\time 7/8
+\tempo "driving"
+\mark \default
+
 	c8 [g e] r c'[ a g]
 	d' [aes f] r d'[ bes aes]
 	c [g e] r c' [a g]
@@ -12,7 +15,7 @@ vibesSongTwo = 	\relative c'' {
 	a[ g f] r a [g f]
 	aes[ g f] r aes[ g f]
 
-\mark \default
+
 
 	r2 c'8[ a g]
 	r2 d'8[ bes aes]
@@ -20,14 +23,22 @@ vibesSongTwo = 	\relative c'' {
 	b8[ gis e gis] r4.
 	a8[ g f g] r4.
 	aes8[ g f] g r4.
-\mark \default
+
 \time 2/2
+\mark \default
+
 	R1*6
 	c1 d e e f aes
-\mark \default
+
 \time 5/4
+\tempo "sumptuous"
+\mark \default
+
 	c1 r4
 	R1*5/4*6
+
+\tempo "chorus"
 	R1*5/4*8
+\bar"||"
 
 	}	
