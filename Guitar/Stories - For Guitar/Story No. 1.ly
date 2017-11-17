@@ -41,7 +41,7 @@ arranger = "   "
 	\compoundMeter #'((2 4) (5 8))
 	d8 [a'] a' [d,] d,16 [a' d a'] ~a [d,16 fis8 d]
 	\break
-	d,8 [a'] a' [cis,] d,16 [a' cis a'] ~a [d,16 fis8 e] 
+	d,8 [a'] a' [cis,] d,16 [a' cis a'] ~a [cis,16 fis8 e] 
 	\break
 	g,, [g'] g' [b,] g,16 [g' b g'] ~g [b,16 g8 e]
 	a, [a'] e' [cis] a,16 [a' cis fis] ~fis [cis16 a8 cis]
