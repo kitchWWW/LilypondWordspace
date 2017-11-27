@@ -15,7 +15,7 @@ tagline =""
 }{
 	\relative c' {
 \compressFullBarRests
-	\key c \major
+	\key e \major
 	\time 1/1
 	\tempo \markup
 	{\concat{ \smaller \general-align #Y #DOWN \note #"1" #1 " ≈ " "4 seconds"}}
@@ -63,6 +63,8 @@ tagline =""
 }{
 	
 	\relative c' {
+\key e \major
+	
 	r1 r1 r1 a':32 a:32 a:32
 	gis ~ gis ~ gis ~ gis ~ gis
 
@@ -78,6 +80,8 @@ tagline =""
 }{
 	
 	\relative c' {
+\key e \major
+	
 \compressFullBarRests
 	\clef "alto"
 	r1 r1 r1 r1 r1 c1:32 b~b r1 r1 r1

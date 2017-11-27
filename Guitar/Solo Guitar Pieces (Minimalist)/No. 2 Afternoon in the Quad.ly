@@ -156,7 +156,7 @@
 
 
 \header {
-	title = "Prelude No. 2"
+	title = "No. 2"
 	subsubtitle = "Afternoon In The Quad"
 	composer = "Brian Ellis"
 	tagline = ""
@@ -189,67 +189,30 @@
 	fis g d' fis, g d' fis, g d' fis, g d'
 	e, g c e, g c e, g c e, g c
 	e, g c e, g c e, g c e, g c\breathe
-
+\break
+\bar "[|:"
+\mark \markup{"A"}
 	e,8 g b e, g b e, g b e, g b
 	e,8 g b e, g b e, g b e, g b
 
+\repeat volta 4 {
+\mark \markup{"B"}
 	e,8-> g b e, g b e, g b e, g b
 	d, g b d, g b d, g b d, g b 
 	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b c, g' b 
+}
+\alternative{
+{
+	b, g' b b, g' b b, g' b b, g'\mark \markup{"to B"}
+ b 
 
-	
-	e,8 g b e, g b e, g b e, g b
-	e,8 g b e, g b e, g b e, g b
-	
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
+}{
 	b, g' b b, g' b b, g' b c, g' b 
-	
-	e,8 g b e, g b e, g b e, g b
-	e,8 g b e, g b e, g b e, g b
-	
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b c, g' b 
+	\mark \markup{"to A"}
+
+}}
+
+\bar ":|]"
 	
 	e,8 g b e, g b e, g b e, g b
 	e,8 g b e, g b e, g b e, g b
@@ -283,23 +246,22 @@
 
 	e,8 g b e, g b e, g b e, g b
 	e,8 g b e, g b e, g b e, g b
+\mark \markup{"C"}
 	
+\repeat volta 4 {
+
 	e,8-> g b e, g b e, g b e, g b
 	d, g b d, g b d, g b d, g b 
 	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b b, g' b 
-	e,8-> g b e, g b e, g b e, g b
-	d, g b d, g b d, g b d, g b 
-	c, g' b c, g' b c, g' b c, g' b 
-	b, g' b b, g' b b, g' b c, g' b 
+}
+\alternative{
+{
+	b, g' b b, g' b b, g' b b, g'\mark \markup{"to C"} b 
+}
+{
+	b, g' b b, g' b c, g' b c, g' b 
+}
+}
 	d,4 <g b e>2.\fermata\harmonic^"XII" \bar "|."
 }
 }

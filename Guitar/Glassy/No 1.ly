@@ -20,13 +20,24 @@
 	\midi {}
 	\layout {}
 
-	\new Staff \relative c'{
-	\clef "treble_8"
-	\key bes \major
-	\time 4/4
-	bes8 bes' a bes
+\transpose c e{
 
-	\bar ":|."
+	\new Staff \relative c''{
+	\clef "treble_8"
+	\key aes \major
+	\time 4/4
+<<{
+	c1 aes g ees des aes f aes
+}\\{
+	f ees bes aes f ees des aes
+}\\{
+	ees''' des aes f ees des aes aes
+}\\{
+	aes' f des bes aes f ees aes
+
+}>>
+
+}
 
 }	
 }
