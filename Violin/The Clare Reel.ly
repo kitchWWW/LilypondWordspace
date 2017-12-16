@@ -38,7 +38,7 @@
 \layout{}<<
 \new Staff 
 {
-\transpose f e{
+\transpose f a{
 	\relative c' {
 	%Theme
 	\tempo 4 = 120
@@ -87,7 +87,7 @@
 \layout{}<<
 \new Staff 
 {
-\transpose f e{
+\transpose f a{
 
 	\relative c'' {
 	%Theme

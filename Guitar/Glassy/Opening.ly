@@ -184,7 +184,7 @@
 	
 	\bar ":|." 
 	\mark \markup{\center-column{
-	\normalsize "To begining"
+	\normalsize "To begining,"
 	\normalsize "with repeats."
 	\teeny" "
 	"x3"}}

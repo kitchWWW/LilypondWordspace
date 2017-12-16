@@ -7,8 +7,9 @@
 \include "parts/vibesSongOne.ly"
 \include "parts/guitarSongOne.ly"
 
-#(set-global-staff-size 22)
-	
+#(set-global-staff-size 15)
+#(set-default-paper-size "letter" 'landscape)
+
 \header{
 piece ="Song, Pt. 1"
 composer = "Brian Ellis"
