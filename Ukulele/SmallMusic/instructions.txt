@@ -1,0 +1,23 @@
+Instructions for Electronics:
+1) press \"record\" after a repeated note the piece begins with
+	- Ukulele begins playing cycle - 
+	(wait a few seconds)
+2) press \"fade in\"
+	- Ukulele finishes first cycle -
+	(wait for a break)
+3) change menu to \"drunk\"
+	- Ukulele plays cycle 3 times - 
+	(halfway through the 3rd rep)
+4) type \"1\" (pressing enter after) in \"index directed\"
+	- Ukulele finishes cycle - 
+	(wait for repeated note)
+5.1) type \"2\" (enter after) in \"index straight\" (do in time)
+5.2) quickly after, change menu to \"drunk\"
+	- Ukulele plays cycle 2 times -
+	(halfway through 2nd rep)
+6) type \"0\" (enter) in \"index directed\"
+	- Ukulele finishes cycle -
+7) type \"3\" (enter) in \"index straight\" (do in time)
+	- Ukulele starts cycle - 
+	(wait a few seconds)
+8) press \"fade out\"

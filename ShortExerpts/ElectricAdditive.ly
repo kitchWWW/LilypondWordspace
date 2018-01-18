@@ -1,6 +1,14 @@
 \header{
 tagline=""
 }
+
+\paper{ 
+#(define fonts
+(set-global-fonts
+#:music "profondo"
+#:brace "profondo"
+#:factor (/ staff-height pt 20) )) }
+
 \paper{
   indent = 0\cm
   left-margin = 5\cm
@@ -11,6 +19,7 @@ tagline=""
   print-all-headers = ##f
   print-page-number = ##f
   ragged-last-bottom = ##t
+
 }
 
 \score{
