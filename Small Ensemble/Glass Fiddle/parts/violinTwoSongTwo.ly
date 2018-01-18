@@ -6,20 +6,20 @@ violinTwoSongTwo=	\relative c' {
 
 \tempo "driving"
 
-	c8 r c r c r e
+	c8\f r c r c r e
 	d r d r d r f
 	e r e r e r g
 	e r e r e r gis
 	f r f r f r e
-	f r f r f r d
+	f\> r f r f r d\mp
 	
 
-	c8 r c r c r e
+	c8\f r c r c r e
 	d r d r d r f
 	e r e r e r g
 	e r e r e r gis
 	f r f r f r e
-	f r f r f r b'
+	f\> r f r f r d\mp
 
 	
 
@@ -34,15 +34,15 @@ violinTwoSongTwo=	\relative c' {
 \mark \default
 \tempo "sumptuous"
 
-	c1 ~ c4
+	c''1\f ~ c4
 	d1 ~ d4
 	e1 ~ e4
 	e1 ~ e4
 	f1 ~ f4
-	f1 ~ f4
-	f1 ~ f4
+	f1\< ~ f4
+	f1\ff ~ f4
 \tempo "chorus"
-	c,,2 c2 c4
+	c,,2\mp c2 c4
 	c2 c2 c4
 	d2 d2 d4
 	d2 d2 d4

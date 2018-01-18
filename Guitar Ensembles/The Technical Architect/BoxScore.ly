@@ -43,13 +43,13 @@ largeSectionB = \relative c' {
 	e [d e]
 	a,16 [c e]
 	f, [a c]
-	a [c]
+	a [c
 
-	e [c g]
+	e c g]
 	c [g f]
-	e' [c]
-	e, [gis b]
-	c [g d]
+	e' [c g]
+	e [gis
+	b g d]
 	e' [c g]
 	c [g e]	
 	e' [c g ^\markup{ \larger"x2"} ]
@@ -78,7 +78,7 @@ one = \relative c' { e4 c }
 
 \header{
 title ="The Technical Architect"
-composer = "Brian Ellis"
+composer = \markup{\column{"Brian Ellis" "  " "  "}}
 arranger = "  "
 dedication = \markup{\column{\line{\italic "For Christian Clark"}\line{" "}}}
 tagline =\markup{
@@ -238,10 +238,10 @@ s1 s2.
 
 }
 
-\column { \line { "      "} }
+\column { \line { "        "} }
 \raise #10
 \column {
-	\line { \huge "Slow Movement"}
+	\line { \huge "I. Slow"}
 	\line {A (solo)}
 	\line {A + 1}
 	\line {A + 2}
@@ -253,13 +253,13 @@ s1 s2.
 	\line {A + 2}
 	\line {A + 3}
 	\line {"   "}
-	\line { \huge "Transition"}
+	\line { \huge "II. Interlude"}
 	\line {A* + 3}
 	\line {B* + 3}
 	\line {B* + 3*}
 	\line {B + 3*}
 	\line {"   "}
-	\line { \huge "Fast Movement"}
+	\line { \huge "III. Fast"}
 	\line {B + 1*}
 	\line {B + 2*}
 	\line {B + 3*}

@@ -6,7 +6,10 @@
 \header {
 title ="An Explanation"
 subtitle = "Solo Percussion "
-poet = "For two bowls of rice and suspended cymbal"
+poet = \markup{\column{"For two metal bowl, rice, and suspended cymbal."
+"Begin with all rice in one bowl."
+"  "	
+}}
 composer = "Brian Ellis"
 meter = " "
 tagline =""
@@ -16,15 +19,15 @@ dedication = \markup{\italic"For Andrew"}
 
 
 \paper{
-  left-margin = 2.5\cm
-  right-margin = 2\cm
-  top-margin = 2\cm
-  bottom-margin = 2\cm
+
   print-page-number = ##f
 	#(set-paper-size "letter" 'landscape)
+  left-margin = 1\cm
+  right-margin = 1\cm
+  top-margin = .5\cm
+  bottom-margin = .5\cm
   system-separator-markup = \slashSeparator
   ragged-last = ##f
-
 }
 
 \score{
@@ -143,13 +146,17 @@ dedication = \markup{\italic"For Andrew"}
 
 	\harmonicsOn
 	 \override Glissando.style = #'zigzag
-	c4. c8 c4\glissando 
+	c4. c8 _\markup{\column{ "  " "  " "Cymbal"}}
+	c4  ^\markup{\tiny\italic"continious spin"}
+	
+	 \glissando 
 	s2.\>
 	\hideNotes
 	c2.\!
 	\unHideNotes
 	\xNotesOn
-	c4. c8 c4
+	c4. ^\markup{\tiny\italic"(throw)"}
+	c8 c4
 	s2.
 	
 	<<{
@@ -282,6 +289,9 @@ dedication = \markup{\italic"For Andrew"}
 	s2.
 	s8 r2\fermata s8
 	\bar "|."
+
+\pageBreak
+s1
 }
 }
 
@@ -302,5 +312,4 @@ dedication = \markup{\italic"For Andrew"}
     \override SystemStartBar.collapse-height = #1
   }
 }
-
 }

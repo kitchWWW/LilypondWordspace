@@ -5,14 +5,14 @@ violinOneSongOne = \relative c'' {
 	\time 5/4
 
 \tempo "lyrical"
-	c4 g e g c
+	c4\mp g e g c
 	d aes f aes d
 	c g e g c
 	b gis e gis b
 	a g f g a
 	aes g f g aes
 
-	c g e g c
+	c\mf g e g c
 	d aes f aes d
 	c g e g c
 	b gis e gis b
@@ -24,28 +24,28 @@ violinOneSongOne = \relative c'' {
 
 \tempo "mechanical"
 	\time 7/8
-	c8 [g e g] c[ a g]
+	c8\f [g e g] c[ a g]
 	d' [aes f aes] d[ bes aes]
 	c [g e g] c [a g]
 	b[ gis e gis] d'[ c b]
 	a[ g f g] a [g f]
-	aes[ g f g] aes[  g f]
+	aes[\> g f g] aes[  g f]\p
 \mark \default
 
 
-	c'8 [g e g] c[ a g]
+	c'8\f [g e g] c[ a g]
 	d' [aes f aes] d[ bes aes]
 	c [g e g] c [a g]
 	b[ gis e gis] d'[ c b]
 	a[ g f g] a [g f]
-	aes[ g f g] aes[ g f]
+	aes[\> g f g] aes[ g f]\p
 
 \mark \default
 
 \time 5/4
 
 \tempo "lyrical"
-	e8 r8 r1
+	e8\mp r8 r1
 	f8 r8 r1
 	g8 r8 r1
 	gis8 r8 r1

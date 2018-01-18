@@ -155,7 +155,7 @@
 
 
 \header {
-	title = "Prelude"
+	title = "No. 3"
 	subsubtitle = "Melody for a New York Appartment"
 	composer = "Brian Ellis"
 	tagline = ""
@@ -186,31 +186,20 @@
 	a cis e, a cis e, a cis e, a cis e, 
 	a cis e, a cis e, a cis e, a cis e, 
 	a cis e, a cis e, a cis e, a cis e,
+\repeat volta 2 {
 \break
-	<<{a8 cis e, a cis e, a cis e, a cis e,
+	<<{a8^\markup{\italic"expressive"} cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	 }\\{d,1. ~ d}>>
 	<<{a''8 cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	 }\\{d,1. ~ d}>>
-	<<{a''8 cis e, a cis e, a cis e, a cis e,
+	<<{a''8^\markup{\italic"flat"} cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	 }\\{r4}>>
-	
-	<<{a8 cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	 }\\{d,1. ~ d}>>
-	<<{a''8 cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	 }\\{d,1. ~ d}>>
-	<<{a''8 cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	 }\\{r4}>>
-
+}
 \break
 	\set Timing.beamExceptions = #'()
 	\set Timing.beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1)
@@ -236,28 +225,21 @@
 	\set Timing.beamExceptions = #'()
 	\set Timing.beatStructure = #'(3 3 3 3)
 \break
+\repeat volt 2{
+	<<{cis8^\markup{\italic"expressive"}
+	 e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e, a
+	 }\\{d,,1. ~ d ~ d d}>>
+	<<{cis''8^\markup{\italic"flat"}
+	e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e,
+	a cis e, a cis e, a cis e, a cis e, a
+	 }\\{r4}>>
+}
 
-	<<{cis8 e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a
-	 }\\{d,,1. ~ d ~ d d}>>
-	<<{cis''8  e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a
-	 }\\{r4}>>
-\pageBreak
-	<<{cis8 e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a
-	 }\\{d,,1. ~ d ~ d d}>>
-	<<{cis''8  e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a
-	 }\\{r4}>>
 	
 	
 \break
@@ -302,29 +284,21 @@
 	\set Timing.beamExceptions = #'()
 	\set Timing.beatStructure = #'(3 3 3 3)
 \break
-	
-	<<{e,8 a cis e, a cis e, a cis e,
+\repeat volta 2{
+	<<{e,8^\markup{\italic"expressive"}
+a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e, a cis
 	 }\\{d,,,1. ~ d}>>
 	<<{e''8 a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e, a cis
-	 }\\{d,,1. ~ d}>>
-	<<{e'8 a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a cis
-	 }\\{r4}>>
-	<<{e,8 a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a cis
 	 }\\{d,,,1. ~ d}>>
-	<<{e''8 a cis e, a cis e, a cis e,
-	a cis e, a cis e, a cis e, a cis e, a cis
-	 }\\{d,,1. ~ d}>>
-	<<{e'8 a cis e, a cis e, a cis e,
+	<<{e''8^\markup{\italic"flat"}
+	a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e,
 	a cis e, a cis e, a cis e, a cis e, a cis
 	 }\\{r4}>>
+	}
 
 \break
 	\set Timing.beamExceptions = #'()

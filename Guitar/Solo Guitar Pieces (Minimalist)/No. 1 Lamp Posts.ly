@@ -3,7 +3,7 @@
 
 
 \header {
-	title = "Prelude No. 1"
+	title = "No. 1"
 	subtitle = "Lamp Posts"
 	subsubtitle = "For Guitar"
 	composer = "Brian Ellis"

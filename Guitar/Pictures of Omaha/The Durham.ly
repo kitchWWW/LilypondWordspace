@@ -61,8 +61,17 @@
 <<{	<fis' e'> 4. <e d'> ~ <e d'>4
 	}\\{a,,8 a a a a a a a}>>
 
+<<{	<fis'' e'> 4. <e d'> ~ <e d'>4
+	}\\{a,,8 a a a a a a a}>>
+	a8 a a a a a a a
 \bar ":|."
-	
+	<fis'' e'> 4. <fis e'> ~ <fis e'>4
+	<fis e'> 4. <fis e'>  ~<fis e'>4
+	<fis e'>1
+
+r1\fermata
+e1 fis cis8 (d2..) ~d4. b4. r4
+
 
 
 
