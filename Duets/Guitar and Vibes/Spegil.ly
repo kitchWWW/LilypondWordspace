@@ -20,7 +20,7 @@ tagline =""
 }
 
 <<
-%%{	
+%{	
 
 \new Staff \with {
   instrumentName = #"Vibraphone"
@@ -53,7 +53,7 @@ tagline =""
 	
 	}	
 }
-%%}
+%}
 
  %===================================================================
 \new Staff \with {

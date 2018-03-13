@@ -40,8 +40,8 @@ composer = ""
 	g, b' g b b' b, b' b,
 	g, b' g b b' b, b' b,
 
-	a, cis' fis, cis' a' cis, a' cis,
-	a, cis' fis, cis' a' cis, a' cis,
+	a, c' fis, c' a' c, a' c,
+	a, c' fis, c' a' c, a' c,
 
 	b, d' g, d' g d g d
 	b, d' g, d' g d g d
@@ -98,9 +98,12 @@ composer = ""
 	d, d' b d g d g d
 	
 	d, cis' b cis g' cis, g' cis,
+	d, cis' b cis g' cis, g' cis,
+
+	d, cis' a cis g' cis, g' cis,
 	d, cis' a cis g' cis, g' cis,
 	
-	d, c' a c g' c, g' c,
+	d, c'! a c g' c, g' c,
 	d, c' a c g' c, g' c,
 	
 	d, c' a c fis c fis c
