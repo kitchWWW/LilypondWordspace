@@ -1,6 +1,16 @@
 
 #(set-global-staff-size 20)
 
+\header{
+tagline = ""
+title = "Prelude in C Major"
+composer = "Brian Ellis"
+}
+
+\paper {
+ragged-last-bottom = ##f
+}
+
 \layout {
     \context { \Score
         autoBeaming = ##f
@@ -129,6 +139,7 @@ PartPTwoVoiceTwo =  \relative c' {
 
 % The score definition
 \score {
+	\new PianoStaff
     <<
         \new Staff <<
             \set Staff.instrumentName = ""
