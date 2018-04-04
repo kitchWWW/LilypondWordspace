@@ -43,13 +43,13 @@ arranger = "   "
 	\key fis \minor
 	\time 8/4
 	<<{
-	a2 (cis b1)
+	a2 (cis <b gis e>1)
 	a2 (cis b1)
 \break
 	a2 (fis'4 e d2) cis4 b
 	a2 (cis <b gis>) a4 gis
 }\\{
-	<a, fis'>2 <fis' a> <e gis> e,
+	<a, fis'>2 <fis' a> r e,
 	<a fis'>2 <fis' a> <<{r2 e'}\\{<e, gis>1}>>
 
 	<a, fis'>2 <fis' a cis> <e gis>1
@@ -71,13 +71,13 @@ arranger = "   "
 \break
 
 	<<{
-	a'2 (cis b1)
+	a'2 (cis <b gis e>1)
 	a2 (cis b1)
 \break
 	a2 (fis'4 e d2) cis4 b
 	a2 (cis <b gis>) a4 b
 }\\{
-	<a, fis'>2 <fis' a> <e gis> e,
+	<a, fis'>2 <fis' a> r e,
 	<a fis'>2 <fis' a> <<{r2 e'}\\{<e, gis>1}>>
 	<a, fis'>2 <fis' a cis> <e gis>1
 	<a, fis'>2 <fis' a> <e>1 \bar "||"
@@ -85,14 +85,14 @@ arranger = "   "
 
 \pageBreak
 
-\override TextSpanner.bound-details.left.text
-= \markup { 8va }
+
 
 \bar".|:"
 \break
- \time 4/4
-	fis'4\harmonic\startTextSpan fis fis fis
-	\stopTextSpan
+ \time 3/4
+\ottava #1
+	fis''4 fis fis
+\time 4/4
 	fis fis fis fis 
 	<<{fis fis fis fis }\\{}>>
 	fis fis \harmonic fis fis 
@@ -117,8 +117,8 @@ arranger = "   "
 	fis\harmonic fis fis fis
 \time 5/4
 	<<{fis fis fis fis fis
+	fis fis fis fis fis\harmonic
 \time 4/4
-	fis fis fis fis 
 	}\\{a,1 (s4 a1)}>>
 	\break
 \bar ":|."
@@ -130,6 +130,7 @@ arranger = "   "
 	s1\)
 	s1
 ^\markup { \center-column { "D.C. al Coda" \line { \musicglyph #"scripts.coda" \musicglyph #"scripts.tenuto" \musicglyph #"scripts.coda"} } }
+\ottava #0
 \bar "||"
 
 
@@ -145,7 +146,7 @@ arranger = "   "
 
 \time 8/4
 <<{
-	a,2 (fis' gis1)
+	a,,2 (fis' gis1)
 }\\{
 	<a,, fis'>2 <fis' a d> <<{<b d>1}\\{e,2 b}>>
 }>>
