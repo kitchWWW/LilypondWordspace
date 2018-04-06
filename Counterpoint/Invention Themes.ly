@@ -21,13 +21,13 @@
 	\key d \major
 	\time 2/4
 	r16 a d fis g d g fis a d, a' fis g cis, g' e
-	d8 fis b g fis d a' e
-	s2
-	fis'16 a, fis' d g b, g' d
-	s2
-	a16 d, a' fis a b, g' d
-
-
+	d8 fis b g d fis a cis
+	d16 fis, d' a d g, d' b
+	g8 cis a4
+	b16 d, b' fis b e, b' gis
+	r16 e a b cis a cis b
+	e8 cis a fis
+	b fis' e8. a16 a4 \bar "|."
 }
 }
 \new Staff 
@@ -39,10 +39,13 @@
 	d8 fis, b4
 	d8 fis, a4
 	r16 a d fis g d g fis a d, a' fis g cis, g' e
-	s2
-	d4 g
-	s2
-	d4 g
+	fis8 d' g,4
+	cis16 e, cis' g cis fis, cis' a
+	d,8 a' e4
+	a8 cis, e gis
+	a16 cis, a' e a d, a' fis
+	b d, b' fis
+	gis8 e a,4
 	}
 }
 >>
