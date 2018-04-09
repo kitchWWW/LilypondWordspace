@@ -4,7 +4,7 @@
 
 \header {
       % The following fields are centered
-    title = "Invention Themes"
+    title = "Inventions"
     subsubtitle = ""
     composer = "Brian Ellis"
 	arranger = "  "
@@ -26,8 +26,8 @@
 	g8 cis a4
 	b16 d, b' fis b e, b' gis
 	r16 e a b cis a cis b
-	e8 cis a fis
-	b fis' e8. a16 a4 \bar "|."
+	a8 cis a fis
+	b d e8. a16 a4 \bar "|."
 }
 }
 \new Staff 
@@ -62,12 +62,21 @@
 {
 	\relative c' {
 	\key g \minor
+\tempo 4 = 100
 	\time 3/4
 	r8 d g a bes c d c d a c fis,
 	g4 d' bes fis d' a
-	r8 d g a bes c d c d a c fis,
-	s2.
-	d,8 ees d g bes f g a g c g ees
+	r8 d g a bes c d c d a c a
+	bes8 a g f d g
+	c bes a g ees g
+	a g f ees d c 
+	bes8 c bes d ees f
+	g4 a ees
+	f g d
+	ees8 f ees f ees g
+	f ees d c bes a
+	g4 d' bes fis d' a
+	r8 d g a bes c d c d a c a
 
 	}
 }
@@ -79,9 +88,20 @@
 	\clef "bass"
 	r2. r2.
 	r8 d g a bes c d c d a c fis,
-	g4 d bes fis' d a
-	s2.
-	d4 bes g
+	g4 d bes' fis d a'
+	g4 d' bes
+	g ees' c
+	f, c' a
+	f d' bes
+	ees,8 f ees a c ees,
+	d ees d g bes d,
+	c d c ees g c,
+	f4 a c,
+	r8 d g a bes c d c d a c fis,
+	g4 d bes' fis d a'
+
+	\bar "|."
+	
 	}
 }
 >>
