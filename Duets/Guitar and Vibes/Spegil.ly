@@ -32,23 +32,41 @@ tagline =""
 	\time 6/4
 	\tempo 4 = 80
 	\key d \major
+\mark \default
 	R1*6/4*3
+\mark \default
 	e1. fis1. ~ fis ~ fis2. r2.
+\mark \default
 	g1. fis1. ~ fis ~ fis2. r2.
+\mark \default
 	d1. e fis1. ~ fis ~ fis2. r2.
+\mark \default
 	a1. g fis1. ~ fis ~ fis2. r2.
+\mark \default
 	e1. d cis fis1. ~ fis ~ fis2. r2.
+\mark \default
 	g1. a b fis1. ~ fis ~ fis2. r2.
+\mark \default
 	b,1. cis d e fis1. ~ fis ~ fis2. r2.
+\mark \default
 	cis'1. b a g fis1. ~ fis ~ fis2. r2.
+\mark \default
 	e1. d cis b a fis'1. ~ fis ~ fis2. r2.
+\mark \default
 	g1. a b cis d fis,1. ~ fis ~ fis2. r2.
+\mark \default
 	g,1. a b cis d e fis1. ~ fis ~ fis2. r2.
+\mark \default
 	e'1. d cis b a g fis1. ~ fis ~ fis2. r2.
+\mark \default
 	e1. d cis b a g fis fis'1. ~ fis ~ fis2. r2.
+\mark \default
 	g1. a b cis d e fis fis,1. ~ fis ~ fis2. r2.
+\mark \default
 	e,1. fis g a b cis d e fis1. ~ fis ~ fis2. r2.
+\mark \default
 	g'1. fis e d cis b a g fis1. ~ fis ~ fis2. r2.
+\mark \default
 	fis1. ~ fis ~ fis2. r2.
 	
 	}	
