@@ -1,0 +1,6 @@
+\markup {
+"{formattedTime}"
+"  "
+"  "
+"{formatted text}"
+}
