@@ -70,7 +70,7 @@ piece="Part I."
 	\time 11/8
 	d8 [ f a f] d8 [ f a f] d [a f]
 	\time 10/8
-	d8 [ f a f] d8 [ f a f] a [f]
+	d8 [ f a f] d8 [ f a f] d [a]
 	\time 9/8
 	d8 [ f a f] d8 [ f a f] a
 	\time 8/8
@@ -119,7 +119,7 @@ piece="Part II."
 	d [f]
 	a [f]
 \time 21/8
-	d [a f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] 
+	d^\markup{\italic{"repeat these cells fewer times"}} [a f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] 
 \time 19/8
 	d [a f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f]
 \time 17/8
@@ -157,7 +157,8 @@ piece="Part II."
 \time 21/8
 	d [a f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] a [f] 
 	\time 2/8
-	a [f]
+\break
+	a^\markup{\italic{"resume numerous repetitions"}} [f]
 	a [d]
 	f [d]
 	f [a]
@@ -285,7 +286,7 @@ piece="Part IV."
 	\time 6/8
 	 d [f a] d [f a]
 	\time 5/8
-	 d [f a] d [f]
+	 d [f a] f [a]
 	\time 4/8
 	 d [f a] f
 	\time 4/8
