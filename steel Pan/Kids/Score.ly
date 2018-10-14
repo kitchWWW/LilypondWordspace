@@ -1,6 +1,6 @@
 \version "2.18.2"
 	
-#(set-global-staff-size 11)
+#(set-global-staff-size 12)
 
 \include "parts/Tenor.ly"
 \include "parts/Double.ly"
