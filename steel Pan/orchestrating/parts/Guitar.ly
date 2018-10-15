@@ -33,15 +33,15 @@ Guitar = {
 	<f bes> <f bes>
 	<f a> <f a>
 \bar "||" \mark \default
-	<a c>8 <a c> <a c> <a c> 
-	<a c>8 <a c> <a c> <a c> 
-	<f d'> <f d'> <f d'> <f d'> 
-	<a c>8 <a c> <a c> <a c> 
+	r8 <a c> <a c> <a c> 
+	r <a c> <a c> <a c> 
+	r <f d'> <f d'> <f d'> 
+	r<a c> <a c> <a c> 
 \bar "||" \mark \default
-	<f a>8 <f a><f a><f a>
-	<f a><f a><f a><f a>
-	<f bes> <f bes> <f bes> <f bes> 
-	<f a><f a><f a><f a>
+	r <f a> <f a> r
+	<f a> <f a> r <f a>
+	r <f bes> <f bes> r 
+	<f a><f a> r <f a>
 \bar "||" \mark \default
 	<f c>4 r <c' c,> r <d d,> r8 <c c,>8 r4 <c c,>
 \bar "||" \mark \default
