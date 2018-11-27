@@ -1,11 +1,12 @@
 \version "2.18.2"
 	
-#(set-global-staff-size 12)
+#(set-global-staff-size 10)
 
 \include "parts/Tenor.ly"
 \include "parts/Double.ly"
 \include "parts/Guitar.ly"
-\include "parts/Bass.ly"
+\include "parts/BassFour.ly"
+\include "parts/BassSix.ly"
 
 \header{
 title ="Kids"
@@ -14,10 +15,23 @@ composer = "MGMT"
 arranger = "Brian Ellis"
 tagline =""
 }
+\paper{
+  left-margin = 1.5\cm
+  right-margin = 1.5\cm
+  top-margin = 1.5\cm
+  bottom-margin = 1.5\cm
+  print-all-headers = ##f
+  print-page-number = ##f
+  ragged-last-bottom = ##f
+  ragged-bottom = ##f
+  #(set-paper-size "letter" 'landscape)
+}
+
+
+
 \score{
 \midi {}
 \layout{}
-
 
 <<
 \new Staff \with {
@@ -36,9 +50,15 @@ tagline =""
   midiInstrument = "Steel Drums"
 }{	\relative c {\Guitar}	}
 \new Staff \with {
-  instrumentName = #"Bass"
-  shortInstrumentName = #"Bass"
+  instrumentName = #"Four Bass"
+  shortInstrumentName = #"4B"
   midiInstrument = "Steel Drums"
-}{	\relative c {\Bass}	}
+}{	\relative c {\BassFour}	}
+\new Staff \with {
+  instrumentName = #"Six Bass"
+  shortInstrumentName = #"6B"
+  midiInstrument = "Steel Drums"
+}{	\relative c {\BassSix}	}
+
 >>
 }

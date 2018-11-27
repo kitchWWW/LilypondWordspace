@@ -14,6 +14,7 @@ Guitar = {
 	\key e \minor
 	\clef bass
 	\xNotesOn
+r1^"(shout!)"
 	d4^"5!" r
 	d4^"4!" r
 	d4^"3!" r
@@ -23,78 +24,83 @@ Guitar = {
 	\xNotesOff
 	\mark \default
 	r1
+	r1
+	r1
 	r1^\markup{\italic{"indiscriminate playground noises"}}
-	R1*6
+	r1
+	r1
+	r1
+	r1
+	
 	\mark \default
-	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
+\bar ".|:"
+	e4\mf e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
 	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b1:32 c8 b a g ~ g a g fis  
-	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
-	e4 e r8 g4 g8~g8 e4 e8 g e a g ~g1:32 c8 b a g ~ g a g fis  
-
+\bar ":|."
+\break
 	\mark \default
-	R1*8
+	<e b'>1:32\p
+	<e c'>:
+	<g b>:
+	<fis a>:
+	<e b'>:32
+	<e c'>:
+	<g b>:
+	<fis a>:\<
+\break
 	\mark \default
-
-	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
+	e4\mp e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
 	e4 e r8 g4 g8~g8 e4 e8 g e a g ~g1: c8 b a g ~ g a g fis 
-	g4 a b d e fis8 e ~e d4 b8~b1:32 a1:
+	g4\mf a b d e fis8 e ~e d4 b8~b1:32 a1:
 	g4 a b d e fis8 e ~e d4 b8~b1: r1
-
-	\mark \default
-	\bar "||"
-
-	
-	<g e>1:32
-	<g e>1:32
-	<g d>1:32
-	<fis d>1:32
-	<g e>1:32
-	<g e>1:32
-	<g d>1:32
-	<fis d>1:32
-	
-
+\break
 	\mark \default
 
-	g4 a b d e fis8 e ~e d4 b8~b1:32 a1:
+	\pageBreak
+	<e, b'>1:32\p
+	<e c'>:
+	<g b>:
+	<fis a>:
+	<e b'>:32
+	<e c'>:
+	<g b>:
+	<fis a>:
+	
+
+	\mark \default
+
+	g4\mf a b d e fis8 e ~e d4 b8~b1:32 a1:
 	g4 a b d e fis8 e ~e d4 b8~b1: r1
 
-	e,1:
+	e,1:\mp
 	c:
 	g':
 	fis:
-	e4 e r8 g4 g8~g8 e4 e8 g e a g ~g1:32 c8 b a g ~ g a g fis  
+	e4\f e r8 g4 g8~g8 e4 e8 g e a g ~g1:32 c8 b a g ~ g a g fis  
 	
-
-
 	\mark \default
-	\bar "||"
 
-
-
-
-
-
-
-
-
-
-	c4 c c c	
+	c4\p c c c	
 	d d d d
 	e e e e
 	fis fis fis fis
-	g g g g
+	g\< g g g
 	a a a a 
 	c c c c
-	fis, fis fis2
-
+	fis,8\f fis16 fis fis8 fis fis2:
+\break
 	\mark \default
-%	R1*16
-%	\mark \default
-
-	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
-	e4 e r8 g4 g8~g8 e4 e8 g e a g ~g1: c8 b a g ~ g a g fis 
-	g4 a b d e fis8 e ~e d4 b8~b1:32 a1:
-	g4 a b d e fis8 e ~e d4 b8~b1: r1
+R1*2
+	e4\mp e r8 g4 g8~g8 e4 e8 g e a b d2: b16 a8 g16
+		 r8 fis ~ fis g fis4 a8 g fis d
+	e4\f e r8 g4 g8~g8 e4 e8 g e a g ~g1: 
+	<<{
+	s1\> s1\p\< s4\> s4 s4 s4\!
+	}\\{
+	c8 b a g ~ g a g <fis d>~
+	<fis d>1:32
+	<g e>1:
+}>>
+\bar "|."
 
 }
