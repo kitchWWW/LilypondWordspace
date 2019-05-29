@@ -4,11 +4,9 @@
 
 
 \include "parts/Tenor.ly"
-\include "parts/Engine.ly"
 \include "parts/Double.ly"
 \include "parts/Guitar.ly"
 \include "parts/BassFour.ly"
-\include "parts/BassSix.ly"
 
 \paper{
   left-margin = 1.5\cm
@@ -23,9 +21,9 @@
 }
 
 \header{
-title ="Kids"
+title ="Mr. Brightside"
 subtitle = "Steel Pan Band"
-composer = "MGMT"
+composer = "The Killers"
 arranger = "Brian Ellis"
 tagline =" "
 }
@@ -81,7 +79,7 @@ tagline =" "
 
 \layout{}
 \new Staff \with {
-  instrumentName = #"Four Bass"
+  instrumentName = #"Bass"
   shortInstrumentName = #""
   midiInstrument = "Steel Drums"
 }{	\relative c {\BassFour}	}

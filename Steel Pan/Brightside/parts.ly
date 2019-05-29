@@ -4,11 +4,9 @@
 
 
 \include "parts/Tenor.ly"
-\include "parts/Engine.ly"
 \include "parts/Double.ly"
 \include "parts/Guitar.ly"
 \include "parts/BassFour.ly"
-\include "parts/BassSix.ly"
 
 \paper{
   left-margin = 1.5\cm
@@ -173,35 +171,6 @@ tagline =" "
   instrumentName = #"Six Bass"
   shortInstrumentName = #""
   midiInstrument = "Steel Drums"
-}{	\relative c {\BassSix}	}
-}
-
-
-
-
-\pageBreak
-\score{
-
-\layout{}
-<<
-\new Staff \with {
-  instrumentName = #"Engine Room"
-  shortInstrumentName = #""
-  midiInstrument = "Steel Drums"
-}{ \relative c'' {\Engine}	}
->>
-}
-
-\pageBreak
-\score{
-
-\layout{}
-<<
-\new Staff \with {
-  instrumentName = #"Drum Set"
-  shortInstrumentName = #""
-  midiInstrument = "Steel Drums"
-}{ \relative c'' {\Engine}	}
->>
+}{	\relative c {\BassFour}	}
 }
 

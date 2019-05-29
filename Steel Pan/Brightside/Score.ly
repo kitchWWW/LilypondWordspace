@@ -6,7 +6,6 @@
 \include "parts/Double.ly"
 \include "parts/Guitar.ly"
 \include "parts/BassFour.ly"
-\include "parts/BassSix.ly"
 
 \header{
 title ="Mr. BrightSide"
@@ -54,11 +53,6 @@ tagline =""
   shortInstrumentName = #"4B"
   midiInstrument = "Steel Drums"
 }{	\relative c {\BassFour}	}
-\new Staff \with {
-  instrumentName = #"Six Bass"
-  shortInstrumentName = #"6B"
-  midiInstrument = "Steel Drums"
-}{	\relative c {\BassSix}	}
 
 >>
 }
