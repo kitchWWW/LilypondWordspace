@@ -74,9 +74,10 @@ Tenor = {
 	r8 a,8\f fis'4 e d
 	e2 d
 
-\mark \markup { \musicglyph #"scripts.coda" }
+\bar "||"
+\mark \markup { "To Coda" }
 
-	fis1:\f^"You are still the melody" a: d,: d:
+	fis1:\f a: d,: d:
 	fis1: a: ~ a4: g2: fis4: ~ fis: e2: d4
 
 \mark \default
@@ -105,7 +106,7 @@ Tenor = {
 \mark \markup { \musicglyph #"scripts.coda" }
 \bar "||"
 
-	<d, fis>1:32\mp^"Not the melody any more, sorry"
+	<d, fis>1:32\mp
 	<d g>:
 	<d fis>:
 	<e cis>:

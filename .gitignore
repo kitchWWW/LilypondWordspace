@@ -2,4 +2,7 @@
 .metadata*
 *.pdf
 *.midi
+*.mp3
+*.mp4
+*.docx
 *.png

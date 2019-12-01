@@ -88,7 +88,8 @@ Double = {
 	r8 a,8\f fis'4 e d
 	e2 d
 
-\mark \markup { \musicglyph #"scripts.coda" }
+\bar "||"
+\mark \markup { "To Coda" }
 
 	fis8\mp d fis d fis d fis d
 	g d g d g d g d

@@ -70,7 +70,8 @@ BassFour = {
 	e2 d
 
 
-\mark \markup { \musicglyph #"scripts.coda" }
+\bar "||"
+\mark \markup { "To Coda" }
 
 	d1:\mp g,1: b: a:
 	d1: g,1: b: a:

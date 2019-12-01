@@ -2,7 +2,8 @@
 
 \header {
 	title = "Opening"
-	subtitle = "    "
+	subtitle = \markup{\italic{\medium{"from Glassworks"}}}
+	subsubtitle = "    "
 	composer = "Philip Glass"
 	arranger = "arr. Brian Ellis"
 	tagline = ""

@@ -9,7 +9,7 @@
 
 \header{
 title ="Mr. BrightSide"
-subtitle = "UT Steel Pan Band"
+subtitle = "Steel Pan Band"
 composer = "The Killers"
 arranger = "arr. Brian Ellis"
 tagline =""

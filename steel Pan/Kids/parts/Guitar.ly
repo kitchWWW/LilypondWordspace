@@ -37,7 +37,7 @@ r1^"(shout!)"
 	e4\mf e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
 	e4 e r8 g4 g8~g8 e4 e8 g e a b ~b1:32 c8 b a g ~ g a g fis  
 \bar ":|."
-\break
+%\break
 	\mark \default
 	<e b'>1:32\p
 	<e c'>:
@@ -47,13 +47,13 @@ r1^"(shout!)"
 	<e c'>:
 	<g b>:
 	<fis a>:\<
-\break
+%\break
 	\mark \default
 	e4\mp e r8 g4 g8~g8 e4 e8 g e a b ~b2.: r8 fis ~ fis g fis4 a8 g fis d
 	e4 e r8 g4 g8~g8 e4 e8 g e a g ~g1: c8 b a g ~ g a g fis 
 	g4\mf a b d e fis8 e ~e d4 b8~b1:32 a1:
 	g4 a b d e fis8 e ~e d4 b8~b1: r1
-\break
+%\break
 	\mark \default
 
 	\pageBreak
@@ -88,7 +88,7 @@ r1^"(shout!)"
 	a a a a 
 	c c c c
 	fis,8\f fis16 fis fis8 fis fis2:
-\break
+%\break
 	\mark \default
 R1*2
 	e4\mp e r8 g4 g8~g8 e4 e8 g e a b d2: b16 a8 g16
