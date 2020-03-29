@@ -4,7 +4,6 @@
 	title = "Violin Solo Music"
 	subtitle = \markup{"(from"\italic"Einstine on the Beach" ")"}
 	composer = "Philip Glass"
-	arranger = "arr. Brian Ellis"
 	tagline = ""
 }
 
