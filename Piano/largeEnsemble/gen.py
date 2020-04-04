@@ -9,19 +9,19 @@ def convert(seconds):
       
     return "%01d:%02d" % (minutes, seconds) 
 
-offset = 240 - 12
-chordWorth = 12
+offset = 420 -20
+chordWorth = 20
 sustainLength = 6
 
 
-chordCount = 1
-
-HOW_MANY = 5
+chordCount = 2
+HOW_MANY = 7
 
 
 res = random.sample(range(chordWorth - sustainLength),HOW_MANY)
-res = range(6)
-random.shuffle(res)
+# res = range(7)
+# res = [i * 2 for i in res]
+# random.shuffle(res)
 
 print "CHORD #"+str(chordCount)
 print "chord starts: "+ str(offset+(chordCount*chordWorth))

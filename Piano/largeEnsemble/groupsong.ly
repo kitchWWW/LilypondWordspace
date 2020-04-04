@@ -1,9 +1,4 @@
-\score {
-  \new StaffGroup <<
-  \new Staff \with {
-  instrumentName = #"1"
-  shortInstrumentName = #"1"
-}  \relative c'' {
+one = \relative c'' {
 	\time 6/4
 \tempo 4 = 40
   \clef treble
@@ -21,17 +16,26 @@
 
 \break
 
-	e8^"3" [d] d [cis] d [b] a [e'] a, [e'] b [d]
+	e8^"4:04" [d]
+	 d^"4:23" [cis]
+	 d^"4:36" [b]
+	 a^"4:49" [e']
+	 a,^"5:08" [e']
+	 b^"5:23" [d]
+	
 
 \break
 	
-	d4^"4" cis b a^"5" a b
+	d4^"4"^"5:37"
+	cis^"5:47"
+	b^"6:00"
+	a~^"6:16" a
+	b^"6:45"
+	d^"7:05"
+	r^"7:25"
 }	
 
-  \new Staff \with {
-  instrumentName = #"2"
-  shortInstrumentName = #"2"
-}  \relative c' {
+two = \relative c' {
   \clef treble
   \key d \major
 	fis4^"0:37"
@@ -49,17 +53,28 @@
 
 \break
 
-	\clef bass	d8^"4" [b] cis [a] b [a] fis  [a] g [a] g [b]
+	\clef bass	d8^"4:10" [b]
+	 cis^"4:17" [a]
+	 b^"4:40" [a]
+	 fis^"4:55"  [a]
+	 g^"5:12" [a]
+	 g^"5:17" [b]
+	
 
 \break
  
-	b4^"5" a a fis^"6" g g
+	b4 ^"5:33"
+	a^"5:52" ~a
+	fis^"6:18"
+	g^"6:30"
+	d^"6:46"
+	~d
+	r^"7:24"
 
 }	
-  \new Staff \with {
-  instrumentName = #"3"
-  shortInstrumentName = #"3"
-} \relative c' {
+
+
+three = \relative c' {
   \clef treble
   \key d \major
 	e4^"0:40"
@@ -78,14 +93,27 @@
 	
 \break
 
-	b8^"5" [g] a [fis] a [fis] d [fis] d [g] d [g]
-	g4^"6" fis fis d^"7" d d
+	b8^"4:02" [g] 
+	 a^"4:15" [fis]
+	 a^"4:30" [fis]
+	 d^"4:45" [fis]
+	 d^"5:00" [g]
+	 d^"5:25" [g]
+
+\break
+	
+	g4^"5:32"
+	fis^"5:53" ~fis
+	d~^"6:19" d
+	g^"6:49"
+	fis^"7:06"
+	r^"7:32"
 
 }	
-  \new Staff \with {
-  instrumentName = #"4"
-  shortInstrumentName = #"4"
-}  \relative c' {
+
+
+
+four =  \relative c' {
   \clef treble
   \key d \major
  \clef bass
@@ -105,18 +133,28 @@
 
 \break
 
-	g8^"6" [e] fis [e] fis [d] d, [d'] d, [d'] g, [d']
+	g8^"4:08" [e]
+	 fis^"4:21" [e]
+	 fis^"4:34" [d]
+	 d,^"4:47" [d']
+	 d,^"5:04" [d']
+	 g,^"5:21" [d']
+	
 
 \break
 
-	e4^"7" e d \clef treble d''4^"1" cis b 
+	e4^"5:34" ~e
+	d^"6:05"
+	\clef treble d''4^"6:15"
+	cis^"6:37"
+	b ^"6:52"
+	a^"7:00"
+	r^"7:21"
 
 }
 
-\new Staff \with {
-  instrumentName = #"5"
-  shortInstrumentName = #"5"
-}  \relative c' {
+
+five =  \relative c' {
   \clef bass
   \key d \major
 	b4^"0:28"
@@ -134,17 +172,27 @@
 
 \break
 
-	e8 [g] e [e,] d' [fis] \clef treble d''8 [b] cis [a] b [a]
+	e8^"4:06" [g]
+	 e^"4:25" [e,]
+	 d'^"4:42" [fis]
+	 \clef treble d''8^"4:57" [b]
+	 cis^"5:06" [a]
+	 b^"5:15" [a]
+	
 
 \break
  
-	a4^"1" a b b^"2" a a
+	a4^"5:30" ~a
+	b^"6:02" ~b
+	a^"6:31" ~a ~
+	a
+	r^"7:28"
 
 }
-\new Staff \with {
-  instrumentName = #"6"
-  shortInstrumentName = #"6"
-}  \relative c' {
+
+
+
+six = \relative c' {
   \clef bass
   \key d \major
 	g4^"0:25" 
@@ -163,18 +211,26 @@
 
 \break
 
-	a8 [fis] a [g] b [g] b [e,] a [e] a [d,]
+	a8^"4:00" [fis]
+	 a^"4:19" [g]
+	 b^"4:38" [g]
+	 b^"4:51" [e,]
+	 a^"5:02" [e]
+	 a^"5:19" [d,]
+	
 
 \break
 
-	fis4^"2" g g  g^"3" fis fis
+	fis4 ^"5:36"
+	g^"5:48" ~g  ~g
+	fis^"6:33" ~fis
+	~fis 
+	r^"7:33"
 
 }
 
-\new Staff \with {
-  instrumentName = #"7"
-  shortInstrumentName = #"7"
-}  \relative c {
+
+seven = \relative c {
   \clef bass
   \key d \major
 	e4^"0:34" ~e
@@ -191,12 +247,56 @@
 	
 \break
 
-	fis8 [e] g [d] g [d] g [e] fis [e] fis [d]
+	fis8^"4:12" [e]
+	 g^"4:27" [d]
+	 g^"4:32" [d]
+	 g^"4:53" [e]
+	 fis^"5:10" [e]
+	 fis^"5:27" [d]
+	
 
 \break
 
-	e4^"3" d d e^"4" e d
+	e4 ^"5:31"
+	d^"5:45" ~d
+	e^"6:21" ~e
+	d^"6:50"
+	~d r^"7:36"
 }
+
+
+
+
+\score {
+  \new StaffGroup <<
+  \new Staff \with {
+  instrumentName = #"1"
+  shortInstrumentName = #"1"
+}  \one
+  \new Staff \with {
+  instrumentName = #"2"
+  shortInstrumentName = #"2"
+}  \two
+  \new Staff \with {
+  instrumentName = #"3"
+  shortInstrumentName = #"3"
+} \three
+  \new Staff \with {
+  instrumentName = #"4"
+  shortInstrumentName = #"4"
+} \four
+\new Staff \with {
+  instrumentName = #"5"
+  shortInstrumentName = #"5"
+} \five
+\new Staff \with {
+  instrumentName = #"6"
+  shortInstrumentName = #"6"
+}  \six
+\new Staff \with {
+  instrumentName = #"7"
+  shortInstrumentName = #"7"
+}  \seven
 
   >>
   \layout { }
