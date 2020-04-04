@@ -1,0 +1,36 @@
+THis version of DiceWaltz has been altered by Robin Newman
+to add the facility to play the Contredanses as well as the Minuets
+which are part of the Phillips Edition of KV 516f 422 500-0
+
+To do this, a separate dicelily.py script has been written, similar to
+the original, but holding an array with the bar info for the 176
+2/4 bars of the Contredanses. Modifications have been made to the
+rest of this script to accommodate the chaged structure e.g. time signature
+headings, version number.
+This script is called dicelilycontredanse.py and the original dicelily.py
+script has been renamed as dicelilywaltz.py but is otherwise unchanged.
+
+The script for common.py has been altered with the addition of a second
+array holding the table of bar choices for the contredanses.
+This is called zahlentafeld, and the orginal table is renamed zahlentafelw
+The procedure waltz is copied, the copy being named contredanse. The first, waltz,
+is adjusted to use the zahlentafelw table and contredanse to use zahlentafeld
+A second version string CONTREDANSE_VERSION is added to the top of the script
+
+the original common.py is retained for reference, but not used and renamed
+OLDcommon.py
+
+The original dicewaltz.py is retained for reference, but not used, and renamed
+OLDdicewaltz.py
+A modified waltz.py replaces it. THis has the following changes
+A line is added to give a new input arg -c to enable the user to select
+the original waltz (1) or a contredanse (2) for the output
+If the export mode is lily, then this argument is used to switch between
+importing lilydicewalz or lilydicecontredanse, and the appropriate
+out procedureis selected.
+Logic is also added to quit the program if choice 2 is used with the
+other output modes mup or abc for which I have not implemented it.
+
+I hope you find the changes entertaining
+
+Robin Newman August 2013 (robin dot newman at gmain dot com)

@@ -173,7 +173,7 @@
   right-margin = 1.5\cm
   top-margin = 2\cm
   bottom-margin = 1.5\cm
-  ragged-last-bottom = ##t
+  ragged-last-bottom = ##f
 }
 
 \score {
@@ -181,6 +181,7 @@
 	\layout {}
 
 	\new Staff \relative c'{
+\numericTimeSignature
 \override Score.BarNumber.break-visibility = ##(#f #f #f)
 \omit Score.BarLine
 \override Staff.TimeSignature #'stencil = ##f 
@@ -192,14 +193,14 @@
 \time 1/4
 	r4
 \time 4/4
-	c1\<^"(swirl, continious wash of sound)" ~c1\!^\markup{\huge\sans"NEXT"}~c1
+	c1\<^"(swirl, continious wash of sound)" ~c1\!^\markup{\huge\sans"PED."}~c1
 
 	~c1\> ~c1\! ^"~0:20"
 \break
 	b4_\markup{\italic"gradual accel."} ^\markup{\column{"(open hand)""(down)"}}
 		r2. d4^"(upward)" r2.
 	\time 3/4
-	b4 r2^\markup{\huge\sans"NEXT"} d4 r2
+	b4 r2^\markup{\huge\sans"PED."} d4 r2
 	\time 2/4
 	
 	s2
@@ -210,14 +211,14 @@
         \scale #'(1.2 . 0.8)
         \arrow #"long" ##f #X #RIGHT #15 #0.3       }
     } 
-    d\tempo 4 = 130 b d^\markup{\huge\sans"NEXT"} b d b d
+    d\tempo 4 = 130 b d^\markup{\huge\sans"PED."} b d b d
 \undo \omit Score.BarLine
 \undo \override Staff.TimeSignature #'stencil = ##f 
 \tempo \markup{\column{"brisk"}}
 \time 4/4
-	b->  d b d b d b d
+	b->\mf  d b^"(accented notes should trigger electronics)" d b d b d
 	b d b d b d b d
-	b->^"(accented notes should trigger electronics)" d b d b d b d
+	b-> d b d b d b d
 	b d b d b-> d b d
 	b d b d-> b d b-> d
 	b-> d b d-> b d b-> d
@@ -237,20 +238,21 @@
 	b8-> d b d-> b d b-> d
 	c2:32\< b8->\! r b d
 	b d b d b-> d b d->
-	b^\markup{\huge\sans"NEXT"} d c2:32\< b8->\! r
+	b^\markup{\huge\sans"PED."} d c2:32\< b8->\! r
 	\bar ".|:"
 	c2.:32\fermata_\markup{\italic"repeat with varying lengths as desired"}
 		\< b8->\! r\fermata
 	\bar ":|."
 \break
 \override Staff.TimeSignature #'stencil = ##f 
+
+	s1^\markup{\italic"improvize a-rhythmically with increasing intensity... (~15 seconds)"}
 \omit Score.BarLine
 
-	s1^\markup{\italic"improvize a-rhythmically with increasing intensity..."}
-	 s1 s 
+	 s1 s s\< s 
 \break
 	c1:32^\markup{\column{"(vigerous shaking)" " "}}
-		_\markup{\italic"gradual deaccel."}
+		_\markup{\italic"gradual deaccel."}\ff\>
 	\time 1/4
 	b32^\markup {
       \concat {
@@ -266,7 +268,7 @@
         \scale #'(1.2 . 0.8)
         \arrow #"long" ##f #X #RIGHT #10 #0.3       }
     }^\markup{\column{"(transition to closed hand)" " "}}
-  d\tempo 4 = 80 b d b^\markup{\huge\sans"NEXT"} d b d
+  d\tempo 4 = 80 b d b^\markup{\huge\sans"PED."}\mp d b d
 \break	
 \undo \omit Score.BarLine
 	\bar ".|:"
@@ -274,23 +276,81 @@
 	\bar ":|."
 \undo \override Staff.TimeSignature #'stencil = ##f 
 \time 4/4
-	b->  d b d b d b d
+	b-> _\markup{\italic"gradual accel."} d b d b d b d
 	b d b d b d b d
 	b-> d b d b d b d
 \time 9/8
-	b-> d b d-> b d b-> d d
+	b->\< d b d-> b d b-> d d
 \time 2/4
 	b-> d b-> d
 \time 9/8
-	b-> d b d-> b d b-> d d
+	b->^"(open hand)"\mf d b d-> b d b-> d d
 \time 2/4
 	b-> d b-> d
 \time 3/4
-	b-> d b d-> b d
+	b->^"(closed hand)" d b d-> b d
 	b-> d b-> d b-> d
 	b-> d b d-> b d
 \time 2/4
 	b-> d b-> d
+\time 4/4
+	b->^"(open hand)" d b d b d b d
+\break
+	g,4.^\markup{\column{"(throw)" "R to L"}} f'4.^"L to R" g,4
+	f'4. g,4. f'4
+\time 2/4
+	b,8->^"(open hand)" d b-> d
+\time 3/4
+	b->^"(closed hand)" d b d-> b d
+		\break
+	b-> d b-> d b-> d
+	g,4.^"R to L" f'4.^"L to R"
+\time 2/4
+	b,8-> d b-> d^\markup{\huge\sans"PED."}
+
+\break
+\override Staff.TimeSignature #'stencil = ##f 
+\time 4/4
+
+	s1^\markup{\italic"improvize rhythmically with constant intensity... (~20 seconds)"}
+\omit Score.BarLine
+
+	 s1 s 
+\break
+	s1^\markup{\italic"improvize w/ rhythms from electronics... (~15 seconds)"}
+	s1 s1 s s s\< s s1^\markup{\huge\sans"PED."} s1^\markup{\italic"(~5 seconds before proceeding)"}
+
+\break
+	c1:32\fff^\markup{\column{"(vigerous shaking)" " "}}
+		_\markup{\italic"gradual deaccel."}
+	\time 1/4
+	b32^\markup {
+      \concat {
+        \raise #1
+        \scale #'(1.2 . 0.8)
+        \arrow #"long" ##f #X #RIGHT #10 #0.3       }
+    } d\> b d b d b d
+	s4 s
+	\time 4/4
+	b8\f^\markup {
+      \concat {
+        \raise #1
+        \scale #'(1.2 . 0.8)
+        \arrow #"long" ##f #X #RIGHT #10 #0.3       }
+    }^\markup{\column{"(transition to closed hand)" " "}}
+  d\tempo 4 = 80 b d b^\markup{\huge\sans"PED."} d b d
+\break	
+\time 2/4
+	b_\markup{\italic"as if running out of steam"} d b d
+	b r d r b r d r 
+	b4\p
+		\undo \omit Score.BarLine 
+	r
+
+
+
+
+
 
 	\bar "|."
 

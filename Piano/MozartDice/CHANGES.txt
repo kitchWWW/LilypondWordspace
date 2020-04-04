@@ -1,0 +1,10 @@
+1.2.1 (20120401):
+- BUGFIX: a typo in common.zahlentafel()
+- NEW: --treble and --bass to select different MIDI instruments for playback
+- NEW: --tempo to select playback tempo
+Commandline syntax changes:
+- now use -L for landscape (was -l)
+- now use -u/--upper for upper part midi instrument (was -t/--treble)
+- now use -l/--lower for lower part midi instrument (was -b/--bass)
+
+
