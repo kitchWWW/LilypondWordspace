@@ -11,8 +11,8 @@
   top-margin = 2\cm
 }
 
-%DICE: 4, 11, 6, 10, 3, 6, 8, 4, 6, 7, 3, 7, 3, 9, 6, 8
-%TABLE DE MUSIQUE: 69, 87, 163, 156, 146, 97, 21, 24, 25, 71, 126, 29, 174, 115, 1, 172
+%DICE: 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+%TABLE DE MUSIQUE: 119, 84, 114, 50, 140, 86, 169, 94, 120, 88, 48, 166, 51, 115, 72, 111
 DiceWaltz = {
   \new PianoStaff <<
     \new Staff = "RH acoustic grand" {
@@ -21,26 +21,26 @@ DiceWaltz = {
       \key c \major
       {\tempo 8=150}
        \repeat volta 2 {
-        g''8( e'' c'') |
-        g''8 c'' e'' |
-        g''16 fis'' g'' d'' b' g' |
-        c''16 g' e'' c'' g''8 |
-        <fis' d''>8 <d'' fis''> <fis'' a''> |
-        g''16 fis'' g'' d'' b' g' |
-        c''16 e'' g'' d'' a' fis'' |
+        e''16 c'' g'' e'' c''' g'' |
+        c''16 g' e'' c'' g'' e'' |
+        <b' d''>8 <b' d''> <b' d''> |
+        c''8 e''16 c'' g'8 |
+        a'8 a'16 d'' fis''8 |
+        d''8 d''16 g'' b''8 |
+        e''16 g'' d'' g'' a' fis'' |
       }
       \alternative {
         { <g' b' d'' g''>4 r8 } { <g' b' d'' g''>4 r8 }
       }
 
       \repeat volta 2 {
-        d'16 fis' a' d'' fis'' a'' |
-        g''16 b'' d''' b'' g''8 |
-        c''16 g' c'' e'' g'' <c'' e''> |
-        b'16 d'' g'' d'' b'8 |
-        g'8 c'' e'' |
+        d'''8 a''16 fis'' d'' a' |
+        g''16 d'' g'' b'' g'' d'' |
+        e''8 c''16 e'' g'' c''' |
+        d''16 b'' g'' d'' b'8 |
         c''16 g' e'' c'' g'' e'' |
-        f''8 d'' g'' |
+        c''16 g' e'' c'' g'' e'' |
+        f''16 e'' d'' c'' b' d'' |
         c''4 r8 |
       }
     }
@@ -52,11 +52,11 @@ DiceWaltz = {
       \key c \major
       \repeat volta 2 {
         <c e>4 r8 |
-        <c e>4 <c g>8 |
-        <b, d>4 r8 |
+        <c e>4 r8 |
+        g8 g g |
         <e g>4 r8 |
-        c8 c c |
-        <b, d>4 <b, g>8 |
+        <c fis>8 <c fis> <c a> |
+        <b, g>4 r8 |
         c8 d d, |
       }
       \alternative {
@@ -64,13 +64,13 @@ DiceWaltz = {
       }
 
       \repeat volta 2 {
-        d4 c8 |
+        <d fis>4 <c fis>8 |
         <b, d>4 <b, d>8  |
-        e4 e16 c |
-        g4 g,8 |
-        <c e>16 g <c e> g <c e> g |
+        <c g>4 <c e>8 |
+        <g b>4 r8 |
         <c e>4 r8 |
-        f8 d g |
+        <c e>4 r8 |
+        f4 g8 |
         c8 g, c, |
       }
     }
