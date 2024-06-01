@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = ""
+  subtitle = "lush melodies sung around the house saturday morning"
   tagline = ""
   title = \markup{\normal-text"vignette 3"}
 }
@@ -31,12 +31,9 @@
     " "
     \bold"Instructions:"
     "Each performer repeats segment in their own time."
-    "Material last between 4 and 20 seconds before beign repeated."
     " "
     \bold"Overal durration: 60-90 seconds."
-    "After finishing your last swell, find silence. continue to vignette 4 together."
-    " "
-    \bold"TODO: correct phone material."
+    "After finishing your last swell, find silence. Continue to vignette 4 together."
     " "
   }
 }
@@ -91,8 +88,8 @@
     \key d \major
     \time 100/4
     \bar ".|:" 
-    b,1:32\< ~b1:\> r4\!
-    b'2\p\fermata r4
+    b,1:32\< ~b1:\> r2\fermata\!
+    b'2\p  r2\fermata
     \bar ":|." 
 
   }
@@ -102,9 +99,9 @@
 \markup{
   \column{
     " "
-    "Phone 1 (following Violin 1): Melody"
-    "Phone 2 (following Violin 2): Melody"
-    "Phone 3 (following Viola): Melody"
-    "Phone 4 (following Cello): Melody"
+    "Phone 1 (following Violin 1): Drone on D"
+    "Phone 2 (following Violin 2): Talking, ingredients"
+    "Phone 3 (following Viola): Drone on F#"
+    "Phone 4 (following Cello): Talking, ingredients"
   }
 }

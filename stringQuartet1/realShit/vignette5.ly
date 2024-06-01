@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = ""
+  subtitle = "(the viola concerto bit)"
   tagline = ""
   title = \markup{\normal-text"vignette 5"}
 }
@@ -12,7 +12,7 @@
   right-margin = 1.5\cm
   top-margin = 1.5\cm
   bottom-margin = 1.5\cm
-  ragged-last-bottom = ##f
+  ragged-last-bottom = ##t
   print-all-headers = ##f
 }
 
@@ -43,61 +43,82 @@
 
 global= {
     \override Hairpin.circled-tip = ##t
-
-  \time 4/4
-  \tempo 4 = 120
-  \key d \major
+\time 12/4
 }
 
 violinOne = \new Voice \relative c'' {
   \override Hairpin.circled-tip = ##t
 
-  \bar "||" \mark \default
-  r1 r1 r1 r1
+  \bar ".|:" 
+  <<{
+    g16 [\harmonic a\harmonic b\harmonic 
+          \override NoteHead.transparent = ##t
+          g b a g a b a b g b a g b a g b g b a g a b a b g b a g ]
+    }\\{
+    d1:32 ~ d1:
+  }>>
+  r1
+  s1 r1 s1 ^\markup{\huge { \hspace #10 "x6" }}
+  \bar ":|."
 
-  \bar "|."
+ <<{
+    c16 [\harmonic d\harmonic e\harmonic 
+          \override NoteHead.transparent = ##t
+          e d f e d e f d e f d f e e d f e d f f d f e f d f e d  ]
+    }\\{
+    g,1:32 ~ g1:
+  }>>
+  s1
+  \bar "||"
+
 }
 
-violinTwo = \new Voice \relative c'' {
+violinTwo = \new Voice \relative c' {
     \override Hairpin.circled-tip = ##t
-  
-  \bar "||" \mark \default
+s1 r1 s1
+<<{
+    c16 [\harmonic d\harmonic e\harmonic 
+          \override NoteHead.transparent = ##t
+          e d f e d e f d e f d f e e d f e d f f d f e f d f e d  ]
+    }\\{
+    g,1:32 ~ g1:
+  }>>
+  r1
+  \bar ":|."
 
-r1 r1 r1 r1
+  <<{
+    d''16 [\harmonic e\harmonic fis\harmonic 
+          \override NoteHead.transparent = ##t
+          d fis e fis e d fis d e fis e d fis e fis e d fis d fis e d fis d e fis e d]
+    }\\{
+    a1:32 ~ a1:
+  }>>
 
-  \bar "|."
+  r1
 }
 
 viola = \new Voice \relative c'' {
   \override Hairpin.circled-tip = ##t
-  \bar "||" \mark \default
-
   \clef alto
+s1^"improvise some fun beautiful lyrical shit" s1 s1 s1 s1 s1
+s1 s1 s1
 
-
-r1 r1 r1 r1
-
-  \bar "|."
 }
 
-cello = \new Voice \relative c' {
+cello = \new Voice \relative c {
   \override Hairpin.circled-tip = ##t
-
-  \bar "||" \mark \default
-
   \clef bass
+  <d a' d\harmonic a'\harmonic>1:32 ~ 
+  <d a' d\harmonic a'\harmonic>1:32
+  r1
+  <g, d' g\harmonic d'\harmonic>1:32 ~ 
+  <g d' g\harmonic d'\harmonic>1:32
+  r1
+  <a' a'\harmonic>:32~ <a a'\harmonic>
+  r1
 
-r1 r1 r1 r1 
-
-
-  \bar "|."
 }
 
-phone = \new Voice \relative c' {
-  \clef percussion  
-
-  \bar "|."
-}
 
 \score {
   \new StaffGroup <<

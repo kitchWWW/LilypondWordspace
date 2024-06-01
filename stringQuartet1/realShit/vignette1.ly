@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = ""
+  subtitle = "calm waves, a bit faster than the tides"
   tagline = ""
   title = \markup{\normal-text"vignette 1"}
 }
@@ -30,7 +30,7 @@
     " "
     \bold"Instructions:"
     "Each performer repeats segment in their own time."
-    "Each swell can be between 4 and 20 seconds."
+    "Each swell can be between 6 and 20 seconds."
     "Overlap, playing with coming in and out of the overal texture."
     "At least 2 players should be playing at any given point."
     " "

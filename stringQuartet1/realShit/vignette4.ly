@@ -1,3 +1,5 @@
+\version "2.24.3"
+
 #(set-default-paper-size "ansi a")
 
 \header {
@@ -13,7 +15,8 @@
   right-margin = 1.5\cm
   top-margin = 1.5\cm
   bottom-margin = 1.5\cm
-  ragged-last-bottom = ##f
+  ragged-last-bottom = ##t
+  ragged-last = ##t
   print-all-headers = ##f
 }
 
@@ -29,18 +32,33 @@
   \column{
     " "
     " "
-    "Instructions:"
-    "somethign some thing"
+    \bold"Instructions:"
+    "Move through numbered sections together"
+    "each section lasts for ~ 15 seconds"
+    " "
+    \bold"Overal durration: 60 seconds."
+    "Continue to vignette 5 together."
+    " "
   }
 }
-
 
 \score {
   \new Staff \with { instrumentName = "Violin 1" } \with{
       \remove Staff_symbol_engraver
     }\relative c'{
       \override Staff.Clef.color = #white
-      s1^\markup { "Whisper about something that brings you joy." }
+      s1^\markup { "1. Whisper about something that brings you joy." }
+  }
+}
+\score{
+  \new Staff \with{
+    }\relative c'{
+      \key d \major
+      \bar ".|:"
+      \xNotesOn
+      d'4 ^\markup {\column{"2. While still whispering, begin to play:" "  " \italic"pizz."}}
+      e fis
+      \bar ":|."
   }
 }
 
