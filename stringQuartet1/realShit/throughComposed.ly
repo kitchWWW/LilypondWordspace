@@ -1,3 +1,7 @@
+#(add-simple-time-signature-style 'topsy-turvy
+   (lambda (fraction)
+     (make-scale-markup '(1.3 . 2) (markup "X"))))
+
 \version "2.24.3"
 
 \header{
@@ -6,6 +10,7 @@
 
 global= {
     \override Hairpin.circled-tip = ##t
+  \numericTimeSignature
 
   \time 4/4
   \tempo 4 = 120
@@ -23,14 +28,16 @@ violinOne = \new Voice \relative c'' {
   d1 ~d2 r2
   d1 ~d2 r2
 
-  d2. <d d,>4 ~ <d d,>2 r2
-  d2. <d d,>4 ~ <d d,>2 r2
-  <d fis>1 ~<d fis>4 \upbow r2.
-  <d fis>1:32 ~<d fis>1:32
+  d2.\< <d d,>4\mf\> ~ <d d,>2 r2\!
+  d2.\< <d d,>4\f\> ~ <d d,>2 r2\!
+  <d fis>1\f ~<d fis>4 \upbow r2.
+  \override Hairpin.circled-tip = ##f
+
+  <d fis>1:32 ~<d fis>1:32\>^\markup{\italic\column{"gradual transition" "to alternating 8ths..."}}
 
   \bar "||" \mark \default
-
-  d8\< (fis d fis d fis d fis)
+  d8\mp\< (fis d fis d fis d fis)
+    \override Hairpin.circled-tip = ##t
   d8\f\> (fis d fis d fis d fis
   d8\!) r2.. R1
   R1 R1
@@ -50,28 +57,38 @@ violinOne = \new Voice \relative c'' {
   R1\fermata
 
   \bar "||" \mark \default
-   
+    \override Score.TimeSignature.style = #'topsy-turvy
+    \override Score.TimeSignature.extra-offset = #'(0 . -1.5)
+
+  \time 24/4
   \hide Stem
   a'4-.^\markup{\italic\column{
     "franetic 16th notes, alternating among specified pitches."
     "no common pulse, unmetered."
     "each swell lasts ~8 seconds."
     "swells should be together with partner."}}\< cis-. d-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
   
+  \break
   b,4-.\< cis-. d-. s4
-  s2 s2\> s1
-  R1\! R1 R1
-
-
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
+\break
   b'4-.\< cis-. e-. s4
-  s2 s2\> s1
-  R1\! R1 R1
-  
+  s2\mf\> s2 s1
+  s2 s2\! r1 s1
+  \break
   b,4-.\< cis-. fis-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\f\> s2 s1
+  s2 s2\! r1 s1
+
+\undo     \override Score.TimeSignature.style = #'topsy-turvy
+\undo    \override Score.TimeSignature.extra-offset = #'(0 . -1.5)
+  \numericTimeSignature
+
+
+  \time 4/4
   \bar "||" \mark \default
 
   \undo \hide Stem
@@ -112,11 +129,11 @@ violinTwo = \new Voice \relative c'' {
   
   e2 fis2 g2 r2
 
-  e2 fis2 g2 r2
+  e2\< fis2 g2\mf\> r2\!
 
-  e4 fis2 g4 fis4 e r2
+  e4\< fis2 g4\f\> fis4 e r2\!
 
-  <e g,>1 ~ <e g,>4\upbow r2.
+  <e g,>1\f ~ <e g,>4\upbow r2.
   <e g,>1:32 ~ <e g,>4\upbow r2.
 
 
@@ -143,23 +160,24 @@ violinTwo = \new Voice \relative c'' {
   R1\fermata
   \bar "||" \mark \default
   \hide Stem
-  d4-.^\markup{\italic "frantically alternate among pitches"}\< fis-. a-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+
+  d4-.^\markup{\italic "franetic 16th notes, see above"}\< fis-. a-. s4
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
 
   \break
   e,4-.\< g-. a-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
   
   d4\< fis-. a-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mf\> s2 s1
+  s2 s2\! r1 s1
 
   \break
   e,4-.\< g-. a-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\f\> s2 s1
+  s2 s2\! r1 s1
   
   \bar "||" \mark \default
   \undo \hide Stem
@@ -198,9 +216,9 @@ viola = \new Voice \relative c'' {
   b1\< a2\mp\> r2\!
   b1_\markup{\italic"sempre"} a2 r2
   b1 a2 r2
-  b1 a2 r2
-  b1 a2 r2
-  <b b,>1 ~<b b,>4\upbow r2.
+  b1\< a2\mf\> r2\!
+  b1\< a2\f\> r2\!
+  <b b,>1\f ~<b b,>4\upbow r2.
   <b b,>1:32 ~<b b,>4\upbow r2.
 
   \bar "||" \mark \default
@@ -222,23 +240,23 @@ viola = \new Voice \relative c'' {
   g,\!) r2.. R1
   R1\fermata
   \bar "||" \mark \default
-  R1 R1 R1
+  s1 r1 s1
 
   \hide Stem
-  d4-.^\markup{\italic "frantically alternate among pitches"}\< fis-. g-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  d4-.^\markup{\italic "franetic 16th notes, see above"}\< fis-. g-. s4
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
 
   fis,4-.\< a-. b-.  s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
   
   d4-.\< fis-. g-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mf\> s2 s1
+  s2 s2\! r1 s1
 
   fis,4-.\< g-. a-.  s4
-  s2 s2\> s1
+  s2 s2\f\> s1
 
   \bar "||" \mark \default
   R1\! R1 R1
@@ -277,9 +295,9 @@ cello = \new Voice \relative c' {
   g1\< ~ g2\mp\> r2\!
   g2_\markup{\italic"sempre"} ~ g8 fis4. ~fis2 r2
   
-  g2 ~ g8 fis4. ~fis2 r2
-  g2 ~ g8 fis4. ~fis2 r2
-  <e a,>1 ~ <e a,>4\upbow r2.
+  g2\< ~ g8 fis4.\mf\> ~fis2 r2\!
+  g2\< ~ g8 fis4.\f\> ~fis2 r2\!
+  <e a,>1\f ~ <e a,>4\upbow r2.
   <e a,>1:32 ~ <e a,>4\upbow r2.
 
 
@@ -302,27 +320,27 @@ cello = \new Voice \relative c' {
 
 \pageBreak
   \bar "||" \mark \default
-   R1 R1 R1
+   s1 r1 s1
 
    \hide Stem
-  g,4-.^\markup{\italic "frantically alternate among pitches"}\< b-. d-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  g,4-.^\markup{\italic "franetic 16th notes, see above"}\< b-. d-. s4
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
 
   d,,4-.\< d'-. s4 s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mp\> s2 s1
+  s2 s2\! r1 s1
 
   g4-.\< b-. d-. s4
-  s2 s2\> s1
-  R1\! R1 R1
+  s2\mf\> s2 s1
+  s2 s2\! r1 s1
  
   <<{
     \override Hairpin.circled-tip = ##t
        \hide Stem
     d,,4\<-. d'-. s4 s4
       \override Hairpin.circled-tip = ##f
-  s2 s2\> s1
+  s2 s2\f\>_\markup{\italic"transition to tremolo..."} s1
 
 
 \pageBreak
@@ -347,9 +365,8 @@ cello = \new Voice \relative c' {
     }\\{
       s1 s s s s s s s s s s
       s1 s s 
-s4 d'2.\rest
+      s4 d'2.\rest
       }>>
-  
 
 
 
