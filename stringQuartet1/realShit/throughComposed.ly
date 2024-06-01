@@ -1,3 +1,34 @@
+\header {
+  % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
+  subtitle = " "
+  tagline = ""
+  title = \markup{\normal-text"prelude"}
+  composer = "Brian Ellis"
+}
+  \paper{
+  indent = 1\cm
+  left-margin = 1.5\cm
+  right-margin = 1.5\cm
+  top-margin = 1.5\cm
+  bottom-margin = 1.5\cm
+  ragged-last-bottom = ##f
+  print-all-headers = ##f
+}
+
+
+
+
+
+
+
+\include "phoneBits.ly"
+
+
+
+
+
+
+
 #(add-simple-time-signature-style 'topsy-turvy
    (lambda (fraction)
      (make-scale-markup '(1.3 . 2) (markup "X"))))
@@ -25,10 +56,16 @@ violinOne = \new Voice \relative c'' {
   d1\< ~d2\mp\> r2\!
   d1_\markup{\italic"sempre"} ~d2 r2
   d1 ~d2 r2
+
+\break
+
   d1 ~d2 r2
   d1 ~d2 r2
 
   d2.\< <d d,>4\mf\> ~ <d d,>2 r2\!
+
+\break
+
   d2.\< <d d,>4\f\> ~ <d d,>2 r2\!
   <d fis>1\f ~<d fis>4 \upbow r2.
   \override Hairpin.circled-tip = ##f
@@ -359,17 +396,14 @@ cello = \new Voice \relative c' {
      \repeat tremolo 8 { d,16\< d' } 
   \repeat tremolo 8 { d,16 d' } 
   \repeat tremolo 8 { d,16 d' } 
-<d, d'>4\ff) \upbow ~
+<d, d'>4 ~\ff) \upbow 
     \hideNotes
-<d d'>
+    <d d'>
     }\\{
       s1 s s s s s s s s s s
       s1 s s 
       s4 d'2.\rest
       }>>
-
-
-
   \bar "|."
 }
 
@@ -389,31 +423,34 @@ phone = \new Voice \relative c' {
     << \global \viola >>
     \new Staff \with { instrumentName = "Cello" }
     << \global \cello >>
+   
+
     \new Staff \with {
       instrumentName = "Phone 1" 
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
     }
-    << \global \phone >>
+    << \global \makeClusters \violinOnePhone >>
+ \new Staff \with {
+      instrumentName = "Phone 2" 
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -3)
+    }
+    << \global \makeClusters \violinTwoPhone>>
 
-    % \new Staff \with {
-    %   instrumentName = "Phone 2" 
-    %   fontSize = #-3
-    %   \override StaffSymbol.staff-space = #(magstep -3)
-    % }
-    % << \global \phone >>
-    % \new Staff \with {
-    %   instrumentName = "Phone 3" 
-    %   fontSize = #-3
-    %   \override StaffSymbol.staff-space = #(magstep -3)
-    % }
-    % << \global \phone >>
-    % \new Staff \with {
-    %   instrumentName = "Phone 4" 
-    %   fontSize = #-3
-    %   \override StaffSymbol.staff-space = #(magstep -3)
-    % }
-    % << \global \phone >>
+  \new Staff \with {
+      instrumentName = "Phone 3" 
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -3)
+    }
+    << \global \makeClusters \violaPhone>>
+     
+  \new Staff \with {
+      instrumentName = "Phone 4" 
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -3)
+    }
+    << \global \makeClusters \celloPhone>>
   >>
   \layout { }
   \midi { }
