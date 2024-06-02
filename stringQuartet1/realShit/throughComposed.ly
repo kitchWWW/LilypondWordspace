@@ -67,7 +67,7 @@ violinOne = \new Voice \relative c'' {
 \break
 
   d2.\< <d d,>4\f\> ~ <d d,>2 r2\!
-  <d fis>1\f ~<d fis>4 \upbow r2.
+  <d fis>1\f ~<d fis>4 \upbow r4 r2
   \override Hairpin.circled-tip = ##f
 
   <d fis>1:32 ~<d fis>1:32\>^\markup{\italic\column{"gradual transition" "to alternating 8ths..."}}
@@ -76,19 +76,19 @@ violinOne = \new Voice \relative c'' {
   d8\mp\< (fis d fis d fis d fis)
     \override Hairpin.circled-tip = ##t
   d8\f\> (fis d fis d fis d fis
-  d8\!) r2.. R1
+  d8\!) r8 r4 r2 R1
   R1 R1
   R1 R1
 
   d8\< (fis d fis d fis d fis)
   d8\f\> (fis d fis d fis d fis
-  d8\!) r2.. R1
+  d8\!) r8 r4 r2 R1
   R1 R1
   R1 R1
 
   d8\< (fis d fis d fis d fis)
   d8\f\> (a' d, a' d, a' d, a'
-  d,8\!) r2.. R1
+  d,8\!) r8 r4 r2 R1
   R1 R1
   R1 R1
   R1\fermata
@@ -100,10 +100,10 @@ violinOne = \new Voice \relative c'' {
   \time 24/4
   \hide Stem
   a'4-.^\markup{\italic\column{
-    "franetic 16th notes, alternating among specified pitches."
+    "frenetic 16th notes, alternating among specified pitches."
     "no common pulse, unmetered."
     "each swell lasts ~8 seconds."
-    "swells should be together with partner." " "}}\< cis-. d-. s4
+    "swells should be together with partner. (violins together, low strings together)" " "}}\< cis-. d-. s4
   s2\mp\> s2 s1
   s2 s2\! r1 s1
   
@@ -129,11 +129,11 @@ violinOne = \new Voice \relative c'' {
   \bar "||" \mark \default
 
   \undo \hide Stem
-  r2. b4\f ( ~ b2 a2 g4)
-  r2. R1 R1
+  r2 r4 b4\f ( ~ b2 a2 g4)
+  r4 r2 R1 R1
 
 
-  r2.
+  r2 r4
   \override Beam.grow-direction = #RIGHT
   \featherDurations 1
   { b,,64(\< [d b' fis') fis (b, d, b) b (d b' fis') fis (b, d, b) b (d b' fis') fis (b, d, b)] }
@@ -143,9 +143,9 @@ violinOne = \new Voice \relative c'' {
 
   r2
   R1 R1
-  r2. <d' d'>4:32\< ~
+  r2 r4 <d' d'>4:32\< ~
   <d d'>1:32
-  ~<d d'>4^\markup{\italic"(let ring)"}\ff\upbow r2.
+  ~<d d'>4^\markup{\italic"(let ring)"}\ff\upbow r4 r2
   
 
   \bar "|."
@@ -170,8 +170,8 @@ violinTwo = \new Voice \relative c'' {
 
   e4\< fis2 g4\f\> fis4 e r2\!
 
-  <e g,>1\f ~ <e g,>4\upbow r2.
-  <e g,>1:32 ~ <e g,>4\upbow r2.
+  <e g,>1\f ~ <e g,>4\upbow r4 r2
+  <e g,>1:32 ~ <e g,>4\upbow r4 r2
 
 
 
@@ -180,25 +180,25 @@ violinTwo = \new Voice \relative c'' {
   R1 R1
   b8\< (d b d b d b d)
   b\f\> (d b d b d b d
-  b8\!) r2.. R1
+  b8\!) r8 r4 r2 R1
   R1 R1
 
   R1 R1
   b8\< (d b d b d b d)
   b\f\> (d b d b d b d
-  b8\!) r2.. R1
+  b8\!) r8 r4 r2 R1
   R1 R1
 
   R1 R1
   b8\< (d b d b d b d)
   b8\f\> (fis' b, fis' b, fis' b, fis'
-  b,8\!) r2.. R1
+  b,8\!) r8 r4 r2 R1
   R1 R1
   R1\fermata
   \bar "||" \mark \default
   \hide Stem
 
-  d4-.^\markup{\italic "franetic 16th notes (see above)"}\< fis-. a-. s4
+  d4-.^\markup{\italic "frenetic 16th notes (see above)"}\< fis-. a-. s4
   s2\mp\> s2 s1
   s2 s2\! r1 s1
 
@@ -227,12 +227,12 @@ violinTwo = \new Voice \relative c'' {
   R1
   r4
   \xNotesOn
-  b2.\<^\markup{\italic\column{"pont." "more noise than pitch"}} ~ b2 b2\> ~ b2
+  b2.\<^\markup{\italic\column{"molto sul pont." "more noise than pitch"}} ~ b2 b2\> ~ b2
   r2\!
   \xNotesOff
 
   r4 <b fis'>2.:32\< ~ <b fis'>1:
-  ~<b fis'>4\ff\upbow (r2.)
+  ~<b fis'>4^\markup{\italic"(let ring)"}\ff\upbow r4 r2
 
 
 
@@ -255,8 +255,8 @@ viola = \new Voice \relative c'' {
   b1 a2 r2
   b1\< a2\mf\> r2\!
   b1\< a2\f\> r2\!
-  <b b,>1\f ~<b b,>4\upbow r2.
-  <b b,>1:32 ~<b b,>4\upbow r2.
+  <b b,>1\f ~<b b,>4\upbow r4 r2
+  <b b,>1:32 ~<b b,>4\upbow r4 r2
 
   \bar "||" \mark \default
 
@@ -264,23 +264,23 @@ viola = \new Voice \relative c'' {
   R1 R1 R1 R1
   g8\< (b g b g b g b )
   g\f\> (b g b g b g b 
-  g\!) r2.. R1
+  g\!) r8 r4 r2 R1
 
   R1 R1 R1 R1
   g8\< (b g b g b g b )
   g\f\> (b g b g b g b 
-  g\!) r2.. R1
+  g\!) r8 r4 r2 R1
 
   R1 R1 R1 R1
   g8\< (b g b g b g b )
   g\f\> (e' g, e' g, e' g, e'
-  g,\!) r2.. R1
+  g,\!) r8 r4 r2 R1
   R1\fermata
   \bar "||" \mark \default
   s1 r1 s1
 
   \hide Stem
-  d4-.^\markup{\italic "franetic 16th notes (see above)"}\< fis-. g-. s4
+  d4-.^\markup{\italic "frenetic 16th notes (see above)"}\< fis-. g-. s4
   s2\mp\> s2 s1
   s2 s2\! r1 s1
 
@@ -305,14 +305,14 @@ viola = \new Voice \relative c'' {
   \xNotesOn
   r2 r8 <a a'>\f^\markup{\italic"pizz"} r <a a'> r
   <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'>
-  r <a a'> r2.
+  r <a a'> r4 r2
   \xNotesOff
 
   \override Hairpin.circled-tip = ##f
   
   r2
   <a a'>:32\mp ~ <a a'>1: ~ <a g'>:\< ~ <a g'>: ~
-  <a g'>4\ff\upbow (r2.)
+  <a g'>4^\markup{\italic"(let ring)"}\ff\upbow r4 r2
 
 
 
@@ -334,8 +334,8 @@ cello = \new Voice \relative c' {
   
   g2\< ~ g8 fis4.\mf\> ~fis2 r2\!
   g2\< ~ g8 fis4.\f\> ~fis2 r2\!
-  <e a,>1\f ~ <e a,>4\upbow r2.
-  <e a,>1:32 ~ <e a,>4\upbow r2.
+  <e a>1\f ~ <e a>4\upbow r4 r2
+  <e a>1:32 ~ <e a>4\upbow r4 r2
 
 
   \bar "||" \mark \default
@@ -343,12 +343,12 @@ cello = \new Voice \relative c' {
   R1 R1 R1 R1 R1 R1
   d'8\< (fis d fis d fis d fis)
   d8\f\> (fis d fis d fis d fis
-  d8\!) r2.. R1
+  d8\!) r8 r4 r2 R1
 
   R1 R1 R1 R1
   d8\< (g d g d g d g)
   d8\f\> (fis d fis d fis d fis
-  d8\!) r2.. R1
+  d8\!) r8 r4 r2 R1
 
   R1 R1 R1 R1
   d8\< (fis d fis d fis d fis)
@@ -360,7 +360,7 @@ cello = \new Voice \relative c' {
    s1 r1 s1
 
    \hide Stem
-  g,4-.^\markup{\italic "franetic 16th notes (see above)"}\< b-. d-. s4
+  g,4-.^\markup{\italic "frenetic 16th notes (see above)"}\< b-. d-. s4
   s2\mp\> s2 s1
   s2 s2\! r1 s1
 
@@ -372,7 +372,6 @@ cello = \new Voice \relative c' {
   s2\mf\> s2 s1
   s2 s2\! r1 s1
  
-  <<{
     \override Hairpin.circled-tip = ##t
        \hide Stem
     d,,4\<-. d'-. s4 s4
@@ -396,14 +395,8 @@ cello = \new Voice \relative c' {
      \repeat tremolo 8 { d,16\< d' } 
   \repeat tremolo 8 { d,16 d' } 
   \repeat tremolo 8 { d,16 d' } 
-<d, d'>4 ~\ff) \upbow 
-    \hideNotes
-    <d d'>
-    }\\{
-      s1 s s s s s s s s s s
-      s1 s s 
-      s4 d'2.\rest
-      }>>
+<d, d'>4) ^\markup{\italic"(let ring)"}\ff\upbow r4 r2
+      
   \bar "|."
 }
 
@@ -415,24 +408,35 @@ phone = \new Voice \relative c' {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with { instrumentName = "Violin 1" }
+    \new Staff \with { 
+      instrumentName = "Violin 1" 
+      shortInstrumentName = "vn 1"
+    }
     << \global \violinOne >>
-    \new Staff \with { instrumentName = "Violin 2" }
+    \new Staff \with { instrumentName = "Violin 2" 
+      shortInstrumentName = "vn 2"
+    }
     << \global \violinTwo >>
-    \new Staff \with { instrumentName = "Viola" }
+    \new Staff \with { instrumentName = "Viola" 
+      shortInstrumentName = "va"
+    }
     << \global \viola >>
-    \new Staff \with { instrumentName = "Cello" }
+    \new Staff \with { instrumentName = "Cello" 
+      shortInstrumentName = "vc"
+    }
     << \global \cello >>
    
 
     \new Staff \with {
       instrumentName = "Phone 1" 
+      shortInstrumentName = "p1" 
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
     }
     << \global \makeClusters \violinOnePhone >>
  \new Staff \with {
       instrumentName = "Phone 2" 
+      shortInstrumentName = "p2" 
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
     }
@@ -440,6 +444,7 @@ phone = \new Voice \relative c' {
 
   \new Staff \with {
       instrumentName = "Phone 3" 
+      shortInstrumentName = "p3" 
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
     }
@@ -447,11 +452,12 @@ phone = \new Voice \relative c' {
      
   \new Staff \with {
       instrumentName = "Phone 4" 
+      shortInstrumentName = "p4" 
       fontSize = #-3
       \override StaffSymbol.staff-space = #(magstep -3)
     }
     << \global \makeClusters \celloPhone>>
   >>
   \layout { }
-  \midi { }
+  % \midi { }
 }

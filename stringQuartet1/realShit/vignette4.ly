@@ -4,7 +4,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = ""
+  subtitle = "~~ super secret ~~"
   tagline = ""
   title = \markup{\normal-text"vignette 4"}
 }
@@ -15,8 +15,8 @@
   right-margin = 1.5\cm
   top-margin = 1.5\cm
   bottom-margin = 1.5\cm
-  ragged-last-bottom = ##t
-  ragged-last = ##t
+  ragged-last-bottom = ##f
+  ragged-last = ##f
   print-all-headers = ##f
 }
 
@@ -33,77 +33,86 @@
     " "
     " "
     \bold"Instructions:"
-    "Move through numbered sections together"
-    "each section lasts for ~ 15 seconds"
+    "Pause, lower bows, and whisper."
+
+    "spend ~15 seconds on each instruction"
+    "move together through each numbered instruction"
     " "
-    \bold"Overal durration: 60 seconds."
-    "Continue to vignette 5 together."
+    \bold"Overal duration: 45 seconds."
+    "Continue to vignette 5 together after a brief pause"
+    " "
+    " "
     " "
   }
 }
 
-\score {
-  \new Staff \with { instrumentName = "Violin 1" } \with{
-      \remove Staff_symbol_engraver
-    }\relative c'{
-      \override Staff.Clef.color = #white
-      s1^\markup { "1. Whisper about something that brings you joy." }
+
+\markup{\line{
+  "Violin 1"
+  "  "
+  \column{
+    "1. Whisper about something that brings you joy." 
+    "2. While still whispering, pluck some sparse pizz. with pitches: B, C#, D."
+    "3. Go back to just whispering."
+    " "
+    " "
+    " "
   }
-}
-\score{
-  \new Staff \with{
-    }\relative c'{
-      \key d \major
-      \bar ".|:"
-      \xNotesOn
-      d'4 ^\markup {\column{"2. While still whispering, begin to play:" "  " \italic"pizz."}}
-      e fis
-      \bar ":|."
+  }}
+
+
+
+\markup{\line{
+  "Violin 2"
+  "  "
+  \column{
+    "1. Whisper about something that brings you clarity." 
+    "2. While still whispering, pluck some sparse pizz. with pitches: D, E, F#."
+    "3. Go back to just whispering."
+    " "
+    " "
+    " "
   }
-}
+  }}
 
 
-\score {
-  \new Staff \with { instrumentName = "Violin 2" } \with{
-      \remove Staff_symbol_engraver
-    }\relative c'{
-      \override Staff.Clef.color = #white
-      s1^\markup { "Whisper about something that brings you clarity." }
+
+\markup{\line{
+  "Viola"
+  "  "
+  \column{
+    "1. Whisper about something that brings you relief." 
+    "2. While still whispering, pluck some sparse pizz. with pitches: A#, B, C#"
+    "3. Go back to just whispering."
+    " "
+    " "
+    " "
   }
-}
+  }}
 
-\score {
-  \new Staff \with { instrumentName = "Viola" } \with{
-      \remove Staff_symbol_engraver
-    }\relative c'{
 
-      \override Staff.Clef.color = #white
-      s1^\markup { "Whisper about something that brings you relief." }
+\markup{\line{
+  "Cello"
+  "  "
+  \column{
+    "1. Whisper about something that brings you purpose." 
+    "2. While still whispering, pluck some sparse pizz. with pitches: B, F#."
+    "3. Go back to just whispering."
+    " "
+    " "
+    " "
   }
-}
-
-
-\score {
-  \new Staff \with { instrumentName = "Cello" } \with{
-      \remove Staff_symbol_engraver
-    }\relative c'{
-
-      \override Staff.Clef.color = #white
-      s1^\markup { "Whisper about something that brings you purpose." }
-  }
-}
-
-
+  }}
 
 
 
 \markup{
   \column{
     " "
-    "Phone 1 (following Violin 1): Melody"
-    "Phone 2 (following Violin 2): Melody"
-    "Phone 3 (following Viola): Melody"
-    "Phone 4 (following Cello): Melody"
+    "Phone 1 (following Violin 1): (silent)"
+    "Phone 2 (following Violin 2): (silent)"
+    "Phone 3 (following Viola): (silent)"
+    "Phone 4 (following Cello): (silent)"
   }
 }
 

@@ -30,11 +30,11 @@
     " "
     \bold"Instructions:"
     "Each performer repeats segment in their own time."
-    "Each swell can be between 6 and 20 seconds."
+    "Each swell should be between 6 and 20 seconds."
     "Overlap, playing with coming in and out of the overal texture."
     "At least 2 players should be playing at any given point."
     " "
-    \bold"Overal durration: 60-90 seconds."
+    \bold"Overal duration: 60-90 seconds."
     "After finishing your last swell, continue attacca to vignette 2."
     " "
     " "
@@ -68,6 +68,8 @@
 
 \score {
   \new Staff \with { instrumentName = "Viola" } \relative c {
+    \romanStringNumbers
+
     \clef alto
       \override Hairpin.circled-tip = ##t
 

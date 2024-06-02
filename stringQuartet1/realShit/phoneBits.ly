@@ -4,15 +4,15 @@ violinOnePhone = \new Voice \relative c'' {
 
   \bar "||" \mark \default
 
-  d1 ~d2 r2 
+  d1^\markup{"(drone)"} ~d2 r2 
   d1_\markup{\italic"sempre"} ~d2 r2
   d1 ~d2 r2
   d1 ~d2 r2
   d1 ~d2 r2
 
-  d2. <d d,>4  ~ <d d,>2 r2 
-  d2. <d d,>4~ <d d,>2 r2 
-  <d fis>1~<d fis>4  r2.
+  d2. <d b>4  ~ <d b>2 r2 
+  d2. <d b>4~ <d b>2 r2 
+  <d fis>1~<d fis>4  r4 r2
   \override Hairpin.circled-tip = ##f
 
   <d fis>1:32 ~<d fis>1:32
@@ -21,19 +21,19 @@ violinOnePhone = \new Voice \relative c'' {
   d8  fis d fis d fis d fis 
     \override Hairpin.circled-tip = ##t
   d8 fis d fis d fis d fis
-  d8   r2.. R1
+  d8   r8 r4 r2 R1
   R1 R1
   R1 R1
 
   d8  fis d fis d fis d fis 
   d8 fis d fis d fis d fis
-  d8   r2.. R1
+  d8   r8 r4 r2 R1
   R1 R1
   R1 R1
 
   d8  fis d fis d fis d fis 
   d8 a' d, a' d, a' d, a'
-  d,8   r2.. R1
+  d,8   r8 r4 r2 R1
   R1 R1
   R1 R1
   R1 
@@ -65,11 +65,11 @@ violinOnePhone = \new Voice \relative c'' {
   \bar "||" \mark \default
 
   \undo \hide Stem
-  r2. b'4  ~ b2 a2 g4 
-  r2. R1 R1
+  r2 r4 b'4  ~ b2 a2 g4 
+  r4 r2 R1 R1
 
 
-  r2.
+  r2 r4
   \override Beam.grow-direction = #RIGHT
   \featherDurations 1
   { b,,64  [d b' fis'  fis  b, d, b  b  d b' fis'  fis  b, d, b  b  d b' fis'  fis  b, d, b ] }
@@ -79,9 +79,9 @@ violinOnePhone = \new Voice \relative c'' {
 
   r2
   R1 R1
-  r2. <d' d'>4:32 ~
+  r2 r4 <d' d'>4:32 ~
   <d d'>1:32
-  ~<d d'>4^\markup{\italic" let ring "}  r2.
+  ~<d d'>4  r4 r2
   
 
   \bar "|."
@@ -106,8 +106,8 @@ violinTwoPhone = \new Voice \relative c'' {
 
   e4 fis2 g4fis4 e r2 
 
-  <e g,>1~ <e g,>4 r2.
-  <e g,>1:32 ~ <e g,>4 r2.
+  <e g,>1~ <e g,>4 r4 r2
+  <e g,>1:32 ~ <e g,>4 r4 r2
 
 
 
@@ -116,19 +116,19 @@ violinTwoPhone = \new Voice \relative c'' {
   R1 R1
   b8  d b d b d b d 
   b d b d b d b d
-  b8   r2.. R1
+  b8   r8 r4 r2 R1
   R1 R1
 
   R1 R1
   b8  d b d b d b d 
   b d b d b d b d
-  b8   r2.. R1
+  b8   r8 r4 r2 R1
   R1 R1
 
   R1 R1
   b8  d b d b d b d 
   b8 fis' b, fis' b, fis' b, fis'
-  b,8   r2.. R1
+  b,8   r8 r4 r2 R1
   R1 R1
   R1 
   \bar "||" \mark \default
@@ -164,7 +164,7 @@ violinTwoPhone = \new Voice \relative c'' {
   \xNotesOff
 
   r4 <b fis'>2.:32 ~ <b fis'>1:
-  ~<b fis'>4   r2. 
+  ~<b fis'>4   r4 r2 
 
 
 
@@ -187,8 +187,8 @@ violaPhone = \new Voice \relative c'' {
   b1 a2 r2
   b1 a2  r2 
   b1 a2r2 
-  <b b,>1~<b b,>4 r2.
-  <b b,>1:32 ~<b b,>4 r2.
+  <b b,>1~<b b,>4 r4 r2
+  <b b,>1:32 ~<b b,>4 r4 r2
 
   \bar "||" \mark \default
 
@@ -196,17 +196,17 @@ violaPhone = \new Voice \relative c'' {
   R1 R1 R1 R1
   g8  b g b g b g b  
   g b g b g b g b 
-  g   r2.. R1
+  g   r8 r4 r2 R1
 
   R1 R1 R1 R1
   g8  b g b g b g b  
   g b g b g b g b 
-  g   r2.. R1
+  g   r8 r4 r2 R1
 
   R1 R1 R1 R1
   g8  b g b g b g b  
   g e' g, e' g, e' g, e'
-  g,   r2.. R1
+  g,   r8 r4 r2 R1
   R1 
   \bar "||" \mark \default
   s1 r1 s1
@@ -230,14 +230,14 @@ violaPhone = \new Voice \relative c'' {
   \xNotesOn
   r2 r8 <a a'>^\markup{\italic"pizz"} r <a a'> r
   <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'> r <a a'>
-  r <a a'> r2.
+  r <a a'> r4 r2
   \xNotesOff
 
   \override Hairpin.circled-tip = ##f
   
   r2
   <a a'>:32 ~ <a a'>1: ~ <a g'>: ~ <a g'>: ~
-  <a g'>4   r2. 
+  <a g'>4   r4 r2 
 
 
 
@@ -259,8 +259,8 @@ celloPhone = \new Voice \relative c' {
   
   g2 ~ g8 fis4.  ~fis2 r2 
   g2 ~ g8 fis4.~fis2 r2 
-  <e a,>1~ <e a,>4 r2.
-  <e a,>1:32 ~ <e a,>4 r2.
+  <e a,>1~ <e a,>4 r4 r2
+  <e a,>1:32 ~ <e a,>4 r4 r2
 
 
   \bar "||" \mark \default
@@ -268,12 +268,12 @@ celloPhone = \new Voice \relative c' {
   R1 R1 R1 R1 R1 R1
   d'8  fis d fis d fis d fis 
   d8 fis d fis d fis d fis
-  d8   r2.. R1
+  d8   r8 r4 r2 R1
 
   R1 R1 R1 R1
   d8  g d g d g d g 
   d8 fis d fis d fis d fis
-  d8   r2.. R1
+  d8   r8 r4 r2 R1
 
   R1 R1 R1 R1
   d8  fis d fis d fis d fis 
@@ -297,5 +297,5 @@ celloPhone = \new Voice \relative c' {
   \undo \hide Stem  
    <b f'>1
    <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1 <b f'>1
-   <b f'>4 r2.
+   <b f'>4 r4 r2
 }

@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = ""
+  subtitle = "...so that all the memories come flooding back at once"
   tagline = ""
   title = \markup{\normal-text"vignette 6"}
 }
@@ -31,12 +31,11 @@
     " "
     \bold"Instructions:"
     "Each performer repeats segment in their own time."
-    "Each swell can be between 4 and 20 seconds."
     "Overlap, playing with coming in and out of the overal texture."
-    "At least 2 players should be playing at any given point."
     " "
-    \bold"Overal durration: 60-90 seconds."
-    "TODO: WRITE ENDING"
+    \bold"Overal duration: 75-90 seconds."
+    " "
+    \line{\bold"Ending:" "All players build via crecendo, and, following cue from violin 2, end together."}
     " "
     " "
   }
@@ -47,8 +46,9 @@
     \key d \major
     \time 12/4
     \bar ".|:" 
+  \override Hairpin.circled-tip = ##t
 
-    fis4\pp\< ^\markup{\italic"vary tempo and # of notes on each repeat"} fis4 fis4 fis4 fis4 fis4\>\f fis4 fis4 fis4 fis4\pp r2\fermata
+    fis4\< ^\markup{\italic"vary tempo and # of notes on each repeat"} fis4 fis4 fis4 fis4 fis4\>\f fis4 fis4 fis4 fis4\! r2\fermata
      \bar ":|." 
  }
 }
@@ -56,11 +56,15 @@
 
 \score {
   \new Staff \with { instrumentName = "Violin 2" }  \relative c'{
+        \time 100/4
     \key d \major
-    \time 17/4
     \bar ".|:" 
-    <a' a>1^\markup{\italic"clean"}\p\< s1\f\> <a a>1^\markup{\column{\italic "sul pont. + overpressure" \italic "(more noise than pitch)"}}\p\< s1\>\f s4\!
-     \bar ":|." 
+
+    d2 ^\markup{\italic"embellish and improvise additional melodic content after first time"} 
+    e4 d4 fis8 d2. b4 \grace a'8 (a,2) r2
+    \times 2/3{b8 a b} a4 g fis' \grace a8 (d,4.) e fis''2 g2. a8 [e] fis4 d4 e2 r4
+
+    \bar ":|."
  }
 }
 
@@ -68,15 +72,20 @@
 \score {
   \new Staff \with { instrumentName = "Viola" }  \relative c'{
     \clef alto
-    \time 100/4
-    \key d \major
+
+\key d \major
+    \time 42/4
+    \romanStringNumbers
     \bar ".|:" 
+      \override Hairpin.circled-tip = ##t
 
-    d2 ^\markup{\italic"embellish and improvise additional melodic content after first time"} 
-    e4 d4 fis8 d2. b4 \grace a'8 (a,2) r2
-    \times 2/3{b8 a b} a4 g fis \grace a8 (d,4.) e fis''2 g2. a8 [e] fis4 d4 e2 r4
+    <a'\1 a\2>1^\markup{\italic \column{ "alternate clean and" "sul pont. + overpressure" "(more noise than pitch)"}}
+        \< s1\f\> s1 r2\! <a\2 a\3>1\< s1\>\f s1 r4\!
+     <d,\2 d\3>1\< s1\f\> s1 r2\!
+     \bar ":|." 
 
-    \bar ":|."  }
+
+  }
 }
 
 
@@ -84,35 +93,32 @@
 
 \score {
   \new Staff \with { instrumentName = "Cello" }  \relative c'{
+  \override Hairpin.circled-tip = ##t
     \clef bass
     \key d \major
     \time 1/4
-    s4^\markup{\italic"repeat cells in any order"}
+    s4^\markup{\italic\column{"repeat cells in any order," "or play a nice melody." "-- whatever feels right."}}
     \bar "||"
     \time 5/4
     <d,, d'>1\f\> r4\!
     \bar "||"
     \time 9/4
-    <d' a'>1:32\p\< s1\f\> r4\!
+    <d' a'>1:32\< s1\f\> r4\!
 
     \bar "||"
     \time 9/4
-    d'1 \harmonic \p\< s1\f\> r4\!
+    d'1 \harmonic \< s1\f\> r4\!
     \bar "||"
-    \time 3/4
-    d,2\p r4
-    \bar "||"
-
-}
+  }
 }
 
 
 \markup{
   \column{
     " "
-    "Phone 1 (following Violin 1): Melody"
+    "Phone 1 (following Violin 1): Noise"
     "Phone 2 (following Violin 2): Melody"
-    "Phone 3 (following Viola): Melody"
-    "Phone 4 (following Cello): Melody"
+    "Phone 3 (following Viola): Speech"
+    "Phone 4 (following Cello): Drone"
   }
 }

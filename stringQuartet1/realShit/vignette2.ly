@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = "cars passing by on the freeway, and supttering in the parking lot"
+  subtitle = "some cars passing by on the freeway, others sputtering in the parking lot"
   tagline = ""
   title = \markup{\normal-text"vignette 2"}
 }
@@ -32,7 +32,7 @@
     "Each performer repeats segment in their own time."
     "Overlap, playing with coming in and out of the overal texture."
     " "
-    \bold"Overal durration: 60-90 seconds."
+    \bold"Overal duration: 60-90 seconds."
     "Violin 1 continues first to vignette 3."
     "After ~10+ seconds of melody, everyone else continues to vignette 3 in their own time."
     " "
@@ -48,9 +48,9 @@
     <<{
       \xNotesOn
     <a' e'>1^\markup{\italic\column{
-      "mute all strings with grip"
+      "mute all strings with left hand"
       "gnarly stutter sound via sul pont. + overpressure"
-      "consistant volume throughout" }}
+      "vary volume throughout" }}
     
     }\\{
       \override NoteHead.transparent = ##t
@@ -67,7 +67,7 @@
     \bar ".|:" 
     s4 ^\markup{\italic\column{
       " "
-      "mute all strings with grip"
+      "mute all strings with left hand"
       "gnarly sound via sul pont. + overpressure"
     }}
 
@@ -96,7 +96,7 @@
     \time 100/4
       \override Hairpin.circled-tip = ##t
       \xNotesOn
-   <c g>8\f^\markup{\italic\column{" " " " "mute all strings with grip" "sul pont." "improvise sporadic, harsh, and sparese rhythms. example of possible below:"}}
+   <c g>8\f^\markup{\italic\column{" " " " "mute all strings with left hand" "sul pont." "improvise sporadic, harsh, and sparse rhythms. example of possible material below:"}}
     r4.
     <a'>16 <d'>16 r8 r2 \times 2/5{r4 <c g d'>4 r8 <d' a'>16 r16}
     r16 <g d'>16 r4 <c>16 r8 r2
@@ -113,11 +113,13 @@
     \bar ".|:" 
     <<{
       \xNotesOn
+    
     <g d'>1^\markup{\italic\column{
-      "mute all strings with grip"
+      "mute all strings with left hand"
       "gnarly stutter sound via sul pont. + overpressure"}}
     }\\{
       \override NoteHead.transparent = ##t
+      \override Hairpin.circled-tip = ##t
       s16 a16\< [f g f a g f a g f a a g f f g f a g f a g f\f\> a a g a g f f g f a g f a g f a a g f\!]       }>>
 r1\fermata
     \bar ":|." 

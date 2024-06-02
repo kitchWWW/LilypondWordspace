@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = "lush melodies sung around the house saturday morning"
+  subtitle = "lush melodies sung around the house tuesday morning"
   tagline = ""
   title = \markup{\normal-text"vignette 3"}
 }
@@ -32,8 +32,8 @@
     \bold"Instructions:"
     "Each performer repeats segment in their own time."
     " "
-    \bold"Overal durration: 60-90 seconds."
-    "After finishing your last swell, find silence. Continue to vignette 4 together."
+    \bold"Overal duration: 60-90 seconds."
+    "After finishing your last repeat, find silence. Continue to vignette 4 together."
     " "
   }
 }

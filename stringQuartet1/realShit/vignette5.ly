@@ -2,7 +2,7 @@
 
 \header {
   % dedication = \markup{\column{\italic"for finding and releasing attention" " "}}
-  subtitle = "(the viola concerto bit)"
+  subtitle = "the crystal light that shatters the bottle..."
   tagline = ""
   title = \markup{\normal-text"vignette 5"}
 }
@@ -14,6 +14,7 @@
   bottom-margin = 1.5\cm
   ragged-last-bottom = ##t
   print-all-headers = ##f
+  print-page-number=##f
 }
 
   \layout {
@@ -29,13 +30,11 @@
     " "
     " "
     \bold"Instructions:"
-    "Each performer repeats segment in their own time."
-    "Each swell can be between 4 and 20 seconds."
-    "Overlap, playing with coming in and out of the overal texture."
-    "At least 2 players should be playing at any given point."
+    "Violin 1, 2 and Cello perform alternating swells to accompany viola melody."
+    "Each swell should be about 8 seconds."
+    "Repeat for a total of 12 swells before continuing to the final swell with everyone."
     " "
-    \bold"Overal durration: 60-90 seconds."
-    "After finishing your last swell, continue attacca to vignette 2."
+    "After finishing the last swell, continue to vignette 6 together."
     " "
     " "
   }
@@ -46,12 +45,14 @@ global= {
 \time 12/4
 }
 
-violinOne = \new Voice \relative c'' {
+violinOne = \new Voice \relative c' {
   \override Hairpin.circled-tip = ##t
 
+      \omit Score.BarNumber
+      
   \bar ".|:" 
   <<{
-    g16 [\harmonic a\harmonic b\harmonic 
+    fis16 [\harmonic g\harmonic a\harmonic 
           \override NoteHead.transparent = ##t
           g b a g a b a b g b a g b a g b g b a g a b a b g b a g ]
     }\\{
@@ -62,7 +63,7 @@ violinOne = \new Voice \relative c'' {
   \bar ":|."
 
  <<{
-    c16 [\harmonic d\harmonic e\harmonic 
+    b16 [\harmonic c\harmonic d\harmonic 
           \override NoteHead.transparent = ##t
           e d f e d e f d e f d f e e d f e d f f d f e f d f e d  ]
     }\\{
@@ -77,7 +78,7 @@ violinTwo = \new Voice \relative c' {
     \override Hairpin.circled-tip = ##t
 s1 r1 s1
 <<{
-    c16 [\harmonic d\harmonic e\harmonic 
+    b16 [\harmonic c\harmonic d\harmonic 
           \override NoteHead.transparent = ##t
           e d f e d e f d e f d f e e d f e d f f d f e f d f e d  ]
     }\\{
@@ -87,9 +88,9 @@ s1 r1 s1
   \bar ":|."
 
   <<{
-    d''16 [\harmonic e\harmonic fis\harmonic 
+    cis'16 [\harmonic d\harmonic e\harmonic 
           \override NoteHead.transparent = ##t
-          d fis e fis e d fis d e fis e d fis e fis e d fis d fis e d fis d e fis e d]
+          d f e f e d f d e f e d f e f e d f d f e d f d e f e d]
     }\\{
     a1:32 ~ a1:
   }>>
@@ -100,7 +101,7 @@ s1 r1 s1
 viola = \new Voice \relative c'' {
   \override Hairpin.circled-tip = ##t
   \clef alto
-s1^"improvise some fun beautiful lyrical shit" s1 s1 s1 s1 s1
+s1^"improvise some fun, beautiful, and lyrical melody material in D major." s1 s1 s1 s1 s1
 s1 s1 s1
 
 }
@@ -157,14 +158,14 @@ cello = \new Voice \relative c {
     % << \global \phone >>
   >>
   \layout { }
-  \midi { }
+  % \midi { }
 }
 \markup{
   \column{
     " "
-    "Phone 1 (following Violin 1): Melody"
-    "Phone 2 (following Violin 2): Melody"
-    "Phone 3 (following Viola): Melody"
-    "Phone 4 (following Cello): Melody"
+    "Phone 1 (following Violin 1): Sparkles in D"
+    "Phone 2 (following Violin 2): Sparkles in A"
+    "Phone 3 (following Viola): Talking"
+    "Phone 4 (following Cello): Drone in D"
   }
 }
