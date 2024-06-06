@@ -79,9 +79,9 @@
     \bar ".|:" 
       \override Hairpin.circled-tip = ##t
 
-    <a'\1 a\2>1^\markup{\italic \column{ "alternate clean and" "sul pont. + overpressure" "(more noise than pitch)"}}
-        \< s1\f\> s1 r2\! <a\2 a\3>1\< s1\>\f s1 r4\!
-     <d,\2 d\3>1\< s1\f\> s1 r2\!
+    <a'^\1 a\2>1^\markup{\italic \column{ "alternate clean and" "sul pont. + overpressure" "(more noise than pitch)"}}
+        \< s1\f\> s1 r2\! <a^\2 a\3>1\< s1\>\f s1 r4\!
+     <d,^\2 d\3>1\< s1\f\> s1 r2\!
      \bar ":|." 
 
 
