@@ -1,0 +1,6 @@
+
+
+convert -density 450 $(ls *pdf) output.pdf 
+
+
+

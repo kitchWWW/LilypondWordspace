@@ -174,11 +174,11 @@
 	\tuplet 3/2 {fis d-4 fis}
 	\tuplet 3/2 {d fis d}
 	\tuplet 3/2 {fis d fis}
-  \set tieWaitForNote = ##t
+  % \set tieWaitForNote = ##t
 	\tuplet 3/2 {d fis~ d~}
 	<fis d>1
 }\\{ 
-  \set tieWaitForNote = ##t
+  % \set tieWaitForNote = ##t
 
 	a,,8-0 a'-2 d,-0 a' d, a' d, a'
 	d, a' d, a' d, a' d,~ a'~
@@ -187,7 +187,7 @@
 	\mark \markup{\center-column{
 	\normalsize "To begining,"
 	\normalsize "with repeats"
-	\vspace #.2
+	% \vspace #.2
 	"x3"}}
 
 	<d, a'>1
@@ -205,3 +205,5 @@
 
 }	
 }
+
+
