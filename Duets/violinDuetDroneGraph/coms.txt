@@ -1,0 +1,1 @@
+convert -density 1900 droneGraph.pdf -quality 100 test.jpg
